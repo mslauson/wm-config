@@ -14,6 +14,9 @@ $scripts/tools/dynamic &
 # wallpaper
 $scripts/wall $config/wallpapers/4.jpg &
 
+$thunderbird
+$signal-desktop
+
 # effects
 $scripts/rgb &
 
