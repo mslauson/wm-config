@@ -142,8 +142,8 @@
             "critical": 20
         },
         "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
+        "format-charging": "{icon}",
+        "format-plugged": "{icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
@@ -154,7 +154,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
-        "format-ethernet": "",
+        "format-ethernet": "{ifname} {ipaddr}/{cidr} {bandwithUpBits} {bandwidthDownBits}",
         "tooltip-format": "via {gwaddr} {ifname}",
         "format-linked": "",
         "format-disconnected": "wifi",
@@ -162,9 +162,9 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-icons": {
             "headphone": "",

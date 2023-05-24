@@ -1,1 +1,1 @@
-{"class": "paused", "text": "\u25b6 Joe Collins - Do You Need A Separate /home Partition for Linux? ", "tooltip": "Do You Need A Separate /home Partition for Linux?\nby Joe Collins\n(firefox.instance1898965)"}
+{"class": "playing", "text": "ThePrimeagen - Is JSON Blazingly Fast or...? ", "tooltip": "Is JSON Blazingly Fast or...?\nby ThePrimeagen\n(firefox.instance9650)"}

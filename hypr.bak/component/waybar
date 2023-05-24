@@ -54,7 +54,7 @@
     // },
     //////////////////////////////////
     "keyboard-state": {
-        "numlock": true,
+      //  "numlock": true,
         "capslock": true,
         "format": "{name} {icon}",
         "format-icons": {
@@ -155,18 +155,18 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
-        "format-ethernet": "",
+        "format-ethernet": "{ifname} {ipaddr}/{cidr} {bandwidthUpBits} {bandwidthDownBits}",
         "tooltip-format": "via {gwaddr} {ifname}",
         "format-linked": "",
         "format-disconnected": "wifi",
         "format-alt": "   "
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+         "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-bluetooth-muted": " {icon} {format_source}",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
