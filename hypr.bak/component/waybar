@@ -155,7 +155,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "",
-        "format-ethernet": "{ifname} {ipaddr}/{cidr} {bandwidthUpBits} {bandwidthDownBits}",
+        "format-ethernet": "{ifname} {ipaddr}/{cidr} {bandwithUpBits} {bandwidthDownBits}",
         "tooltip-format": "via {gwaddr} {ifname}",
         "format-linked": "",
         "format-disconnected": "wifi",

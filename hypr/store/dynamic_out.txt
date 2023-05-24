@@ -1,1 +1,1 @@
-{"class": "playing", "text": "ThePrimeagen - Is JSON Blazingly Fast or...? ", "tooltip": "Is JSON Blazingly Fast or...?\nby ThePrimeagen\n(firefox.instance9650)"}
+{"class": "playing", "text": "ThePrimeagen - From Meth To Netflix ", "tooltip": "From Meth To Netflix\nby ThePrimeagen\n(firefox.instance9650)"}
