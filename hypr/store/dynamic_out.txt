@@ -1,1 +1,1 @@
-{"class": "playing", "text": "ThePrimeagen - From Meth To Netflix ", "tooltip": "From Meth To Netflix\nby ThePrimeagen\n(firefox.instance9650)"}
+{"class": "playing", "text": "ThePrimeagen - Will ChatGPT Terminate Your Job? ", "tooltip": "Will ChatGPT Terminate Your Job?\nby ThePrimeagen\n(firefox.instance9650)"}

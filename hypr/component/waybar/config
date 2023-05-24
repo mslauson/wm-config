@@ -153,12 +153,16 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "",
-        "format-ethernet": "{ifname} {ipaddr}/{cidr} {bandwithUpBits} {bandwidthDownBits}",
+        "format-wifi": " {bandwidthUpBits}  {bandwidthDownBits}  ",
+         "format-ethernet": " {bandwidthUpBits}  {bandwidthDownBits} ",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr}  ",
+        "tooltip-format-wifi": "{ipaddr}/{cidr}  \n    {essid} ({signalStrength}%) ",
+
         "tooltip-format": "via {gwaddr} {ifname}",
         "format-linked": "",
-        "format-disconnected": "wifi",
-        "format-alt": "   "
+        "format-disconnected": "Disconnected",
+        "format-alt": "   ",
+        "on-click": "wifi4wofi"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
