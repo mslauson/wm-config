@@ -175,7 +175,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click" : "pw-volume mute toggle",
+        "on-click-right": "pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {}",
