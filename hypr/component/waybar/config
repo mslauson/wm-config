@@ -139,13 +139,14 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
+        "interval":15,
         "states": {
             "warning": 50,
             "critical": 20
         },
-        "format": "{icon}",
-        "format-charging": "{icon}",
-        "format-plugged": "{icon}",
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% {icon}",
+        "format-plugged": "{capacity}% {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
