@@ -8,9 +8,10 @@ POSITION=3
 
 #y-offset
 YOFF=17
+height=300
 
 #x-offset
 XOFF=0
 
 #fields to be displayed
-FIELDS=SSID,SECURITY,BARS
+FIELDS=SSID,SECURITY,BARS,ACTIVE,IN-USE

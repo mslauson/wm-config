@@ -217,12 +217,24 @@ window#waybar {
 }
 
 #battery {
-    background-color: #11111b;
-    color:#a6e3a1;
+
+    background: rgb(205,214,244);
+        background: radial-gradient(circle, #a6e3a1,#74c7ec, #89dceb, #89b4fa,#b4befe,#cba6f7);
+
+
+    background-size: 200% 300%;
+
+    animation: gradient_f_nh 4s linear infinite;
+    margin-right: 25px;
+    color: #fff ;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: 21px;
     font-weight: bolder;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+
 }
 
 @keyframes blink {
