@@ -26,10 +26,10 @@ window {
 
 #inner-box {
     margin: 4px;
-    border: 10px solid #fff;
+    border: 10px solid #181825;
     color: #cba6f7;
     font-weight: bold;
-    background-color: #fff;
+    background-color: #181825;
     border-radius: 15px;
 }
 
@@ -37,7 +37,7 @@ window {
     margin: 0px;
     border: none;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: #181825;
 }
 
 #scroll {
