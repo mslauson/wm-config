@@ -58,7 +58,7 @@
     font-size: 15px;
 }
 
-#clock, #memory, #network{
+#clock {
         padding-top: 5px;
     padding-right: 21px;
     font-weight: bolder;
