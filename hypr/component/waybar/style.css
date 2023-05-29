@@ -3,7 +3,11 @@
     font-size: 13px;
 }
 
-#modules-left{
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar.modules-left{
     background-color: black;
 }
 
@@ -185,9 +189,6 @@
 /*     padding-left: 20px; */
 /**/
 /* } */
-window#waybar {
-    background-color: transparent;
-}
 
 #custom-dynamic_pill label {
     color: #11111b;
@@ -433,11 +434,6 @@ window#waybar {
     background-color: #ffa000;
 }
 
-
-
-#tray {
-    background-color: #2980b9;
-}
 
 #tray > .passive {
     -gtk-icon-effect: dim;
