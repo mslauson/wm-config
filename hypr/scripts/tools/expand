@@ -36,6 +36,13 @@ do
                 echo ""
             fi
             ;;
+        "battery")
+            if $scripts/toolbar_state; then
+                echo ""
+            else
+                echo ""
+            fi
+            ;;
         # "media")
             
         *)

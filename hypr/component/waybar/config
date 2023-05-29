@@ -10,8 +10,8 @@
     "margin-bottom":-11,
     //"margin-top":5,
     "modules-left": ["wlr/workspaces", "keyboard-state"],
-    "modules-right": ["pulseaudio", "temperature","bluetooth","backlight","battery","network","custom/ss","custom/cycle_wall","custom/expand","memory","cpu","clock", "tray"],
-    "modules-center": ["custom/dynamic_pill" ],
+    "modules-right": ["pulseaudio", "temperature","bluetooth","backlight","battery","network","custom/ss","custom/cycle_wall","custom/expand","memory","cpu", "tray"],
+    "modules-center": ["custom/dynamic_pill", "clock" ],
     // Modules configuration
 
 
@@ -107,7 +107,7 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 10,
         "spacing": 10
     },
     "clock": {
