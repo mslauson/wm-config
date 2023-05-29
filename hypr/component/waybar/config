@@ -70,11 +70,24 @@
     "wlr/workspaces": {
         "format": "{icon}",
         "format-active": " {icon} ",
-        "on-click": "activate"
-        // "format-icons":{
-        //     "10":"10"
-        // }
-    },
+        "on-click": "activate",
+			"format": "{icon}",
+			"on-scroll-up": "hyprctl dispatch workspace e+1",
+			"on-scroll-down": "hyprctl dispatch workspace e-1",
+			"format-icons": {
+				"1": "",
+				"2": "",
+				"3": "",
+				"4": "",
+				"5": "",
+				"6": "",
+				"7": "",
+				"8": "",
+				"9": "",
+				"10": "",
+				"urgent": "",
+				"default": ""
+			}    },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
