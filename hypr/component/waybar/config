@@ -9,7 +9,7 @@
     // "margin-right":25,
     "margin-bottom":-11,
     //"margin-top":5,
-    "modules-left": ["wlr/workspaces", "keyboard-state"],
+    "modules-left": ["custom/wlogout","wlr/workspaces", "keyboard-state"],
     "modules-right": ["pulseaudio", "temperature","bluetooth","backlight","battery","network","custom/ss","custom/cycle_wall","custom/expand","memory","cpu", "tray"],
     "modules-center": ["custom/dynamic_pill", "clock" ],
     // Modules configuration
@@ -38,6 +38,11 @@
         "format":"{}",
         "exec":"~/.config/hypr/scripts/tools/expand arrow-icon"
     },
+    "custom/wlogout": {
+			"format": "",
+			"interval": "once",
+			"on-click": "wlogout -c 5 -r 5 -p layer-shell"
+		},
     // "custom/waybar-mpris": {
     //     "return-type": "json",
     //     "exec": "echo '   '",
