@@ -49,7 +49,7 @@
 
     # Set the progress bar height. This includes the frame, so make sure
     # it's at least twice as big as the frame width.
-    progress_bar_height = 10
+    progress_bar_height = 20
 
     # Set the frame width of the progress bar
     progress_bar_frame_width = 1
@@ -114,7 +114,7 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    # idle_threshold = 120
+    idle_threshold = 5m
 
     ### Text ###
 
@@ -162,7 +162,7 @@
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = left
+    alignment = center
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
@@ -214,7 +214,7 @@
     sticky_history = yes
 
     # Maximum amount of notifications kept in history
-    history_length = 20
+    history_length = 200
 
     ### Misc/Advanced ###
 
@@ -251,7 +251,7 @@
 
     # Uncomment this if you want to let notications appear under fullscreen
     # applications (default: overlay)
-    layer = bottom
+    layer = overlay
 
     # Set this to true to use X11 output on Wayland.
     force_xwayland = false
@@ -304,7 +304,7 @@
     background = "#11111b"
     foreground = "#89b4fa"
     frame_color = "#89b4fa"
-    timeout = 3
+    timeout = 10
     script = ~/.scripts/dunst/sound-normal.sh
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -313,7 +313,7 @@
     background = "#11111b"
     foreground = "#a6e3a1"
     frame_color = "#a6e3a1"
-    timeout = 3
+    timeout = 10
     script = ~/.scripts/dunst/sound-normal.sh
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
@@ -322,7 +322,7 @@
     background = "#11111b"
     foreground = "#f38ba8"
     frame_color = "#f38ba8"
-    timeout = 3
+    timeout = 60
     script = ~/.scripts/dunst/sound-critical.sh
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
