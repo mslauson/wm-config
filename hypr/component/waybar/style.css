@@ -37,7 +37,8 @@ window#waybar {
 #network,
 #mpd
 {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 20px;   
     border-radius: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -86,7 +87,6 @@ window#waybar {
     /* margin-right: 25px; */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     
-    font-size: 15px;
 }
 
 #battery,
@@ -104,7 +104,7 @@ window#waybar {
 #network label,
 #memory label,
 #cpu label{
-    color:#89dceb;
+    color:#f38ba8;
 }
 
 #pulseaudio.muted,
@@ -183,6 +183,10 @@ window#waybar {
 #workspaces button label{
     color: 	#FFFFFF ;
     font-weight: bolder;
+}
+
+#workspaces button {
+    padding-right: 10px;
 }
 
 #workspaces button.active label{
