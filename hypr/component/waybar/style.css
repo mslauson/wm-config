@@ -84,12 +84,30 @@ window#waybar {
 
     animation: gradient_f_nh 4s linear infinite;
     /* margin-right: 25px; */
-    color: #fff ;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     
     font-size: 15px;
 }
 
+#battery,
+#disk,
+#temperature,
+#backlight,
+#keyboard-state label,
+#custom-wlogout,
+#bluetooth,
+#pulseaudio,
+#clock {
+    color: #fff ;
+}
+
+#network label,
+#memory label,
+#cpu label{
+    color:#89dceb;
+}
+
+#tray,
 #pulseaudio.muted,
 #network.disconnected,
 #temperature.critical,
@@ -105,7 +123,6 @@ window#waybar {
     background: radial-gradient(circle,#f2cdcd,#f5c2e7, #f38ba8,#eba0ac, #fab387, #f9e2af);
     background-size: 200% 300%;
     animation: gradient_f_nh 4s linear infinite;
-    color: #fff ;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
 }
 
