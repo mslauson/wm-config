@@ -19,7 +19,7 @@
     "custom/dynamic_pill": {
         "return-type": "json",
         "exec": "~/.config/hypr/scripts/tools/start_dyn",
-        "escape":true
+        "escape":false
     },
     "custom/ss":{
         "format":"{}",
@@ -61,7 +61,7 @@
     "keyboard-state": {
      //   "numlock": true,
         "capslock": true,
-        "format": "{icon}",
+        "format": "{name} {icon}",
         "format-icons": {
             "locked": "",
             "unlocked": ""
