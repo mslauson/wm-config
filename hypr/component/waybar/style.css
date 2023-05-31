@@ -7,24 +7,17 @@ window#waybar {
     background-color: transparent;
 }
 
-.modules-left{
-    background-color: transparent;
-    box-shadow: 
-        0px 0px 0px 2px rgba(209,206,236,1), 
-        0px 0px 0px 4px rgba(179,158,237,1), 
-        0px 0px 0px 6px rgba(162,204,237,1), 
-        0px 0px 0px 8px rgba(191,160,246,1), 
-        0px 0px 0px 10px rgba(166,177,241,1), 
-        0px 0px 0px 12px rgba(221,160,221,1), 
-        0px 0px 0px 14px rgba(173,153,236,1), 
-        0px 0px 0px 16px rgba(139,133,214,1), 
-        0px 0px 0px 18px rgba(181,206,235,1), 
-        0px 0px 0px 20px rgba(145,140,216,1), 
-        0px 0px 0px 22px rgba(154,138,218,1), 
-        0px 0px 0px 24px rgba(137,190,232,1), 
-        0px 0px 0px 26px rgba(159,137,218,1), 
-        0px 0px 0px 28px rgba(169,133,219,1);
-    }
+/* .modules-left{ */
+/*     background-color: transparent; */
+/*     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px; */
+/*     border-radius: 15px; */
+/*      box-sizing: border-box; */ 
+/*     border: 5px solid; */
+/*     border-image-slice: 1; */
+/*     border-width: 2px; */
+/*     border-image-source: radial-gradient(circle, rgba(210,206,236,1) 0%, rgba(179,158,237,1) 6%, rgba(162,204,237,1) 14%, rgba(191,160,246,1) 14%, rgba(166,177,241,1) 18%, rgba(221,160,221,1) 28%, rgba(173,153,236,1) 28%, rgba(139,133,214,1) 58%, rgba(181,206,235,1) 69%, rgba(145,140,216,1) 69%, rgba(154,138,218,1) 72%, rgba(137,190,232,1) 73%, rgba(159,137,218,1) 78%, rgba(169,133,219,1) 100%); */
+/**/
+/*     } */
 
 #clock,
 #battery,
@@ -57,11 +50,17 @@ window#waybar {
 #temperature,
 #backlight,
 #network,
-#keyboard-state,
+#keyboard-state label,
 #custom-wlogout,
 #bluetooth,
 #pulseaudio,
 #clock {
+    padding: 0 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
     background: rgb(205,214,244);
     background: radial-gradient(circle, rgba(209,206,236,1) 0%, rgba(179,158,237,1) 6%, rgba(162,204,237,1) 14%, rgba(191,160,246,1) 14%, rgba(166,177,241,1) 18%, rgba(221,160,221,1) 28%, rgba(173,153,236,1) 28%, rgba(139,133,214,1) 58%, rgba(181,206,235,1) 69%, rgba(145,140,216,1) 69%, rgba(154,138,218,1) 72%, rgba(137,190,232,1) 73%, rgba(159,137,218,1) 78%, rgba(169,133,219,1) 100%);
 
@@ -74,6 +73,34 @@ window#waybar {
     
     font-size: 15px;
 }
+
+#pulseaudio.muted,
+#network.disconnected,
+#temperature.critical,
+#keyboard-state label.locked,
+#battery.critical {
+    padding: 0 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    background: radial-gradient(circle,#f2cdcd,#f5c2e7, #f38ba8,#eba0ac, #fab387, #f9e2af);
+
+
+    background-size: 200% 300%;
+
+    animation: gradient_f_nh 4s linear infinite;
+    color: #fff ;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    
+    font-size: 15px;
+    padding-top: 5px;
+    padding-right: 21px;
+    padding-left: 20px;
+
+}
+
 
 #clock {
         padding-top: 5px;
@@ -155,47 +182,6 @@ window#waybar {
 
 }
 
-#pulseaudio.muted,
-#network.disconnected,
-#temperature.critical,
-#keyboard-state label.locked,
-#battery.critical {
-
-    background: rgb(205,214,244);
-    background: radial-gradient(circle,#f2cdcd,#f5c2e7, #f38ba8,#eba0ac, #fab387, #f9e2af);
-
-
-    background-size: 200% 300%;
-
-    animation: gradient_f_nh 4s linear infinite;
-    color: #fff ;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    
-    font-size: 15px;
-    padding-top: 5px;
-    padding-right: 21px;
-    padding-left: 20px;
-
-}
-
-
-/* #pulseaudio { */
-/**/
-/* background: rgb(63,94,251); */
-/* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
-/**/
-/*     background-size: 200% 300%; */
-/**/
-/*     animation: gradient_f_nh 4s linear infinite; */
-/*     color: #fff ; */
-/*     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377); */
-/*      */
-/*     font-size: 15px; */
-/*     padding-top: 5px; */
-/*     padding-right: 21px; */
-/*     padding-left: 20px; */
-/**/
-/* } */
 
 #custom-dynamic_pill label {
     color: #11111b;
@@ -228,9 +214,10 @@ window#waybar {
     padding-right: 20px;
     box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
     background: rgb(203,166,247);
-    background: linear-gradient( #b4befe 15%, #94e2d5 30%, #89dceb 45%,  #cba6f7 60%, #f38ba8 85%, #94e2d5 100%  );
+    /* background: linear-gradient( #b4befe 15%, #94e2d5 30%, #89dceb 45%,  #cba6f7 60%, #f38ba8 85%, #94e2d5 100%  ); */
+    background: radial-gradient(circle, #a6e3a1,#74c7ec, #89dceb, #89b4fa,#f5c2e7,#cba6f7,#f38ba8); 
     background-size: 400% 400%;
-    animation: gradient_f 20s ease-in-out infinite;
+    animation: gradient_f 4s ease-in-out infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
@@ -244,9 +231,9 @@ window#waybar {
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background: rgb(203,166,247);
     background-size: 400% 400%;
-    background: linear-gradient( #b4befe 25%,  #fab387 25%, #f5c2e7 25%,  #cba6f7 25% ) ;
-    animation: gradient_f_nh 4s linear infinite;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    background: radial-gradient(circle, #11111b ,  #fab387 , #f5c2e7 20%,  #f9e2af  ) ;
+    animation: gradient_f 4s ease-in-out infinite;
+transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 @keyframes gradient {
