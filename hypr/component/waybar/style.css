@@ -111,7 +111,6 @@ window#waybar {
 #network.disconnected,
 #temperature.critical,
 #keyboard-state label.locked,
-#workspaces button.active
 #battery.critical {
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background: radial-gradient(circle,#f2cdcd,#f5c2e7, #f38ba8,#eba0ac, #fab387, #f9e2af);
@@ -195,8 +194,6 @@ window#waybar {
     background-color: transparent;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* margin-right: 10px; */
-    /* margin-left: 25px; */
 }
 
 #workspaces button.active{
@@ -209,9 +206,8 @@ window#waybar {
 
     box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
     background: rgb(203,166,247);
-    /* background: linear-gradient( #b4befe 15%, #94e2d5 30%, #89dceb 45%,  #cba6f7 60%, #f38ba8 85%, #94e2d5 100%  ); */
     background: radial-gradient(ellipse at center, #a6e3a1 ,#74c7ec ,#89dceb , #94e2d5 , #89b4fa , #f38ba8 ); 
-    background-size: 400% 400%;
+    background-size: 200% 200%;
     animation: gradient_f 10s ease-in-out infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
