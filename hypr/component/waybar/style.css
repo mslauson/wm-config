@@ -78,6 +78,7 @@ window#waybar {
 #network.disconnected,
 #temperature.critical,
 #keyboard-state label.locked,
+#workspaces button.active,
 #battery.critical {
     padding: 0 10px;
     border-radius: 15px;
