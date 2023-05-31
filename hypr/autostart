@@ -16,7 +16,7 @@ $scripts/wall $config/wallpapers/4.jpg &
 
 thunderbird &
 signal-desktop &
-
+config-init.sh &
 # effects
 $scripts/rgb &
 
