@@ -233,14 +233,14 @@ window#waybar {
 }
 #workspaces button{
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    background-color: #11111b ;
+    background: radial-gradient(circle, #b4befe 90%,  #fab387 90%, #f5c2e7 90%,  #cba6f7 90% ) ;
     border-radius: 15px;
     margin-right: 10px;
     padding: 10px;
     padding-top: 4px;
     padding-bottom: 2px;
     font-weight: bolder;
-    color: 	#89b4fa ;
+    /* color: 	#89b4fa ; */
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.68);
 }
 
