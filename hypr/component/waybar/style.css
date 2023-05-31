@@ -19,6 +19,29 @@ window#waybar {
 /**/
 /*     } */
 
+/* standard sizing */
+#cpu,
+#clock,
+#battery,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#custom-expand,
+#custom-wlogout,
+#custom-cycle_wall,
+#custom-ss,
+#custom-dynamic_pill,
+#mpd
+{
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
 #clock,
 #battery,
 #pulseaudio,
@@ -32,19 +55,12 @@ window#waybar {
 #custom-ss,
 #custom-dynamic_pill,
 #mpd {
-    padding: 0 10px;
-    border-radius: 15px;
     background: #11111b;
     color: #b4befe;
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 5px;
 }
 
-#clock,
 #battery,
-#cpu,
 #memory,
 #disk,
 #temperature,
@@ -149,7 +165,6 @@ window#waybar {
 
 }
 
-
 #custom-dynamic_pill label {
     color: #11111b;
     font-weight: bold;
@@ -166,7 +181,7 @@ window#waybar {
 }
 
 #workspaces button.active label{
-    color: #11111b;
+    color: 	#FFFFFF ;
     font-weight: bolder;
 }
 
@@ -194,8 +209,11 @@ window#waybar {
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+/* Grey button  */
+
+#cpu,
+#custom-expand,
 #workspaces button{
-    border-radius: 15px;
     margin-right: 10px;
     padding: 10px;
     padding-top: 4px;
@@ -203,10 +221,14 @@ window#waybar {
     font-weight: bolder;
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background: rgb(203,166,247);
-    background: radial-gradient(ellipse at center, #11111b 5%, #181825 10%, #6c7086 15%, #b4befe 35%, #fab387 50%, #f5c2e7 65%,  #f9e2af 80%, #f2cdcd 100% ) ;
-    background-size: 400% 400%;
+    background: radial-gradient(ellipse at center, #11111b 5%, #181825 10%, #6c7086 15%, #1e1e2e 35%,#585b70 50%, #f5c2e7 65%,  #f9e2af 80%, #f2cdcd 100% ) ;
+    background-size: 200% 200%;
     animation: gradient_f 20s ease-in-out infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button{
+    border-radius: 20px;
 }
 
 @keyframes gradient {
@@ -343,11 +365,7 @@ window#waybar {
     color:#89dceb;
 }
 
-#cpu {
-    background: rgb(30,30,46);
-    background: radial-gradient(circle, rgba(30,30,46,1) 30%, rgba(17,17,27,1) 100%); 
-    color: 	#89b4fa;
-}
+
 
 /* #memory { */
 /*     background-color: #cba6f7; */
