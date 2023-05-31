@@ -117,31 +117,6 @@ window#waybar {
     padding-right:15px;
 }
 
-
-/* #network, */
-/* #pulseaudio, */
-/* #temperature, */
-/* #battery { */
-/**/
-/*     background: rgb(205,214,244); */
-/*     background: radial-gradient(circle, #a6e3a1,#74c7ec, #89dceb, #89b4fa,#b4befe,#cba6f7); */
-/**/
-/**/
-/*     background-size: 200% 300%; */
-/**/
-/*     animation: gradient_f_nh 4s linear infinite; */
-/*     margin-right: 25px; */
-/*     color: #fff ; */
-/*     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377); */
-/*      */
-/*     font-size: 15px; */
-/*     padding-top: 5px; */
-/*     padding-right: 21px; */
-/*     font-weight: bolder; */
-/*     padding-left: 20px; */
-/**/
-/* } */
-
 #battery.charging {
 
    background: rgb(70,235,198);
@@ -211,13 +186,19 @@ window#waybar {
     /* margin-left: 25px; */
 }
 #workspaces button.active{
-    padding-right: 20px;
+     border-radius: 15px;
+    margin-right: 10px;
+    padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-weight: bolder;
+
     box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
     background: rgb(203,166,247);
     /* background: linear-gradient( #b4befe 15%, #94e2d5 30%, #89dceb 45%,  #cba6f7 60%, #f38ba8 85%, #94e2d5 100%  ); */
-    background: radial-gradient(circle, #a6e3a1,#74c7ec, #89dceb, #89b4fa,#f5c2e7,#cba6f7,#f38ba8); 
+    background: radial-gradient(ellipse at center, #a6e3a1,#74c7ec,#89dceb, #94e2d5, #89b4fa); 
     background-size: 400% 400%;
-    animation: gradient_f 4s ease-in-out infinite;
+    animation: gradient_f 8s ease-in-out infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
@@ -230,10 +211,10 @@ window#waybar {
     font-weight: bolder;
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background: rgb(203,166,247);
+    background: radial-gradient(ellipse at center, #11111b 5%, #181825 10%, #6c7086 15%, #b4befe 35%, #fab387 50%, #f5c2e7 65%,  #f9e2af 80%, #f2cdcd 100% ) ;
     background-size: 400% 400%;
-    background: radial-gradient(circle, #11111b ,  #fab387 , #f5c2e7 20%,  #f9e2af  ) ;
-    animation: gradient_f 4s ease-in-out infinite;
-transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    animation: gradient_f 20s ease-in-out infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 @keyframes gradient {
