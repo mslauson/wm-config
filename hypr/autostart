@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+source $HOME/.profile
 
 # variables
 config=$HOME/.config/hypr
