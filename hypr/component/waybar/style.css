@@ -192,6 +192,7 @@ window#waybar {
     /* margin-right: 10px; */
     /* margin-left: 25px; */
 }
+
 #workspaces button.active{
      border-radius: 15px;
     margin-right: 10px;
