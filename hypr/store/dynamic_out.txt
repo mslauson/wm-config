@@ -1,1 +1,1 @@
-{"class": "paused", "text": "\u25b6 Laptop Retrospective - Lenovo ThinkPad X1 Nano One Year Later ", "tooltip": "Lenovo ThinkPad X1 Nano One Year Later\nby Laptop Retrospective\n(firefox.instance7583)"}
+"{\"class\": \"none\", \"text\": \"\"}"
