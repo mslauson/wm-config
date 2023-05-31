@@ -1,1 +1,1 @@
-{"class": "playing", "text": "Sneed Mobile Tech - New T-Mobile Go5G Plans Deep Dive: Should You Switch? ", "tooltip": "New T-Mobile Go5G Plans Deep Dive: Should You Switch?\nby Sneed Mobile Tech\n(firefox.instance2758290)"}
+{"class": "playing", "text": "Sneed Mobile Tech - T-Mobile Raised Prices: Verizon & AT&T Next? ", "tooltip": "T-Mobile Raised Prices: Verizon &amp; AT&amp;T Next?\nby Sneed Mobile Tech\n(firefox.instance2758290)"}
