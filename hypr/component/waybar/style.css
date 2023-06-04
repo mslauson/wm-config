@@ -248,8 +248,8 @@ window#waybar {
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background: rgb(203,166,247);
     /* color: #fff ; */
-    /* background: radial-gradient(ellipse at center, #11111b 5%, #181825 10%, #6c7086 15%, #1e1e2e 35%,#585b70 50%, #f5c2e7 65%,  #f9e2af 80%, #f2cdcd 100% ) ; */
-background: radial-gradient(ellipse at center, #11111b , #181825 , #8839ef, #11111b , #181825 , #6c7086 , #1e1e2e,#585b70, #ca9ee6,#11111b , #181825 , #6c7086 , #1e1e2e,#585b70, #c6a0f6,#11111b , #181825 , #6c7086 , #1e1e2e,#585b70, #cba6f7 ) ;
+    background: radial-gradient(ellipse at center, #11111b 5%, #181825 10%, #6c7086 15%, #1e1e2e 35%,#585b70 50%, #f5c2e7 65%,  #f9e2af 80%, #f2cdcd 100% ) ;
+/* background: radial-gradient(ellipse at center, #11111b , #181825 , #8839ef, #11111b , #181825 , #6c7086 , #1e1e2e,#585b70, #ca9ee6,#11111b , #181825 , #6c7086 , #1e1e2e,#585b70, #c6a0f6,#11111b , #181825 , #6c7086 , #1e1e2e,#585b70, #cba6f7 ) ; */
     /* background: radial-gradient(ellipse at center, #11111b, #181825, #6c7086, #1e1e2e, #585b70, #f5c2e7,#dd7878, #ea76cb,  #f9e2af, #f2cdcd ) ; */
     background-size: 400% 400%;
     animation: gradient_f 20s ease-in-out infinite;
