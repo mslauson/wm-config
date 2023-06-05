@@ -8,7 +8,7 @@ POSITION=3
 
 #y-offset
 YOFF=17
-height=300
+# height=300
 
 #x-offset
 XOFF=0

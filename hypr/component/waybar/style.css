@@ -234,7 +234,7 @@ window#waybar {
     font-weight: bolder;
     box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
     background: rgb(203,166,247);
-    background: radial-gradient(ellipse at center, #11111b 5%, #181825 10%, #6c7086 15%, #1e1e2e 35%,#585b70 50%, #f5c2e7 65%,  #f9e2af 80%, #f2cdcd 100% ) ;
+    background: radial-gradient(circle, #11111b , #6c7086 , #1e1e2e , #8839ef , #7287fd , #11111b , #6c7086 , #1e1e2e,#1e66f5, #04a5e5  );
     background-size: 200% 200%;
     animation: gradient_f 20s ease-in-out infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
