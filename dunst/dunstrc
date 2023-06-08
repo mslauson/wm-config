@@ -286,6 +286,7 @@
     mouse_left_click = close_current
     mouse_middle_click = context
     mouse_right_click = do_action
+    mouse_double_click = open_url
 
 # Experimental features that may or may not work correctly. Do not expect them
 # to have a consistent behaviour across releases.
@@ -311,8 +312,8 @@
 
 [urgency_normal]
     background = "#11111b"
-    foreground = "#a6e3a1"
-    frame_color = "#a6e3a1"
+    foreground = "#cba6f7"
+    frame_color = "#cba6f7"
     timeout = 10
     script = ~/.scripts/dunst/sound-normal.sh
     # Icon for notifications with normal urgency, uncomment to enable
