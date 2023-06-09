@@ -9,6 +9,7 @@ scripts=$config/scripts
 dunst &
 
 # waybar
+$scripts/tmux_init.sh &
 $scripts/launch_waybar &
 $scripts/tools/dynamic &
 
