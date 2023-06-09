@@ -2,11 +2,7 @@
     font-family: JetBrainsMono Nerd Font , Noto Sans,FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     border-radius: 15px;
-}
-
-.label{
         color: #fff ;
-
 }
 
 window#waybar {
@@ -99,19 +95,6 @@ window#waybar {
     /* margin-right: 25px; */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
     
-}
-
-#cpu,
-#battery,
-#disk,
-#temperature,
-#backlight,
-#keyboard-state label,
-#custom-wlogout,
-#bluetooth,
-#pulseaudio,
-#clock {
-    color: #fff ;
 }
 
 #network label,
