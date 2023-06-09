@@ -32,8 +32,6 @@ tmux send-keys -t $WORK:2 'pUi && nvim' C-m
 tmux new-window -t $CONF:1 -n 'nvim'
 tmux send-keys -t $CONF:1 'pConf && cd astro-config && nvim .' C-m
 
-
-
 tmux new-window -t $CONF:2 -n 'wm'
 tmux send-keys -t $CONF:2 'pConf && cd wm-config && nvim .' C-m
 
