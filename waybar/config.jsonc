@@ -119,6 +119,7 @@
     "format-ethernet": " ETH",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": " Disconnected",
+    "tooltip-format-ethernet": " {bandwidthUpBits}  {bandwidthDownBits} ",
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
     "on-click": "~/.config/waybar/scripts/networkmanager.sh"
   },
