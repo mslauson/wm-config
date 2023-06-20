@@ -83,7 +83,7 @@
   "custom/memory": {
     "exec": "~/.config/waybar/scripts/free-mem.sh",
     "interval": 1,
-    "on-click": "~/.config/waybar/scripts/htop.sh"
+    "on-click": "~/.config/waybar/scripts/btop.sh"
   },
   "tray": {
     "icon-size": 13,
@@ -198,6 +198,6 @@
   "custom/power": {
     "format": "<span font='13' rise='1000'>襤</span>",
     "tooltip": false,
-    "on-click": "~/.config/hypr/scripts/logout.sh"
+    "on-click": "~/.config/scripts/powermenu.sh"
   }
 }

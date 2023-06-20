@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kitty -e btop &
+kitty --title="boppin-pu\$\$i" -e btop &
