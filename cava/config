@@ -4,7 +4,7 @@
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'.
-mode = normal
+mode = waves
 
 # Accepts only non-negative values.
 framerate = 60
