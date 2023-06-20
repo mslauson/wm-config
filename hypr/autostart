@@ -14,8 +14,9 @@ $scripts/launch_waybar &
 $scripts/tools/dynamic &
 
 # wallpaper
-$scripts/wall $config/wallpapers/4.jpg &
+# $scripts/wall $config/wallpapers/4.jpg &
 
+hyprpaper $config/wallpapers/1.jpg
 thunderbird &
 discord &
 signal-desktop &
