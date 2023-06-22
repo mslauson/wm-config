@@ -1,6 +1,6 @@
 #!/bin/env bash
 
-wallpaper_folder=$HOME/.config/hypr/bg/
+wallpaper_folder=$HOME/.config/hypr/wallpapers/
 wallpaper_location="$(ls "$wallpaper_folder" | rofi -dmenu)"
 
 

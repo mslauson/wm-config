@@ -16,7 +16,7 @@ $scripts/tools/dynamic &
 # wallpaper
 # $scripts/wall $config/wallpapers/4.jpg &
 
-hyprpaper $config/wallpapers/1.jpg
+swaybg -m fill -i $config/wallpapers/1.jpg
 thunderbird &
 discord &
 signal-desktop &
