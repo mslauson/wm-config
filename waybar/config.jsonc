@@ -34,6 +34,7 @@
     "pulseaudio#microphone",
     "battery",
     "backlight",
+    "custom/wprofi",
     "custom/power"
   ],
   "hyprland/window": {
@@ -47,7 +48,7 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "custom/launcher": {
-    "format": "<span color='#d8dee9'></span>",
+    "format": "<span color='#7F3FBF'></span>",
     // "on-click": "wofi --show drun --insensitive --allow-images"
     "on-click": "rofi -show drun -theme ~/.config/rofi/global/rofi.rasi"
   },
@@ -85,8 +86,8 @@
   },
   "custom/memory": {
     "exec": "~/.config/waybar/scripts/free-mem.sh",
-    "interval": 1,
-    "on-click": "~/.config/waybar/scripts/btop.sh"
+    "interval": 1
+    // "on-click": "~/.config/waybar/scripts/btop.sh"
   },
   "tray": {
     "icon-size": 13,
@@ -119,8 +120,8 @@
     "format-ethernet": " ETH",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": " Disconnected",
-    "tooltip-format-ethernet": " {bandwidthUpBits}  {bandwidthDownBits} ",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+    "tooltip-format-ethernet": " {bandwidthUpBits}  {bandwidthDownBits}  ",
+    "tooltip-format-wifi": "  {signalStrength}% |  {bandwidthUpBits}  {bandwidthDownBits}  ",
     "on-click": "~/.config/waybar/scripts/networkmanager.sh"
   },
   "custom/language": {
@@ -199,9 +200,21 @@
     "tooltip": false,
     "min-length": 6
   },
+  // "custom/power": {
+  //   "format": "<span font='13' rise='1000'>襤</span>",
+  //   "tooltip": false,
+  //   "on-click": "~/.config/scripts/powermenu.sh"
+  // }
   "custom/power": {
     "format": "<span font='13' rise='1000'>襤</span>",
     "tooltip": false,
-    "on-click": "~/.config/scripts/powermenu.sh"
+    "interval": "once",
+    "on-click": "wlogout -c 5 -r 5 -p layer-shell"
+  },
+  "custom/wprofi": {
+    "format": "<span color='#7F7FFF' font='13' rise='1000'> </span>",
+    "tooltip": false,
+    "interval": "once",
+    "on-click": "~/.config/hypr/scripts/wallpaper_rofi.sh"
   }
 }
