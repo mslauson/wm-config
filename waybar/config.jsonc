@@ -7,7 +7,7 @@
   // "output": ["HDMI-A-1", "eDP-1",], // Which Monitor waybar opens on
   "passtrough": false,
   "gtk-layer-shell": true,
-  "height": -14,
+  // "height": -14,
   "spacing": 0,
   "margin-top": -2,
   "margin-bottom": 0,
