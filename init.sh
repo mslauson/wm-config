@@ -3,17 +3,17 @@ currentPath=/home/mslauson/projects/config/wm-config
 echo "Which computer are we on today?" | lolcat
 COMPUTER="$(gum choose desktop thonk cancel)"
 echo "Initializing for $COMPUTER"
-    case $COMPUTER in
-        desktop ) 
-
-            break;;
-        thonk )
-            break;;
-        Cancel ) 
-            echo "No config was changed!"
-            exit
-            ;;
-    esac
+    # case $COMPUTER in
+    #     desktop ) 
+    #
+    #         break;;
+    #     thonk )
+    #         break;;
+    #     Cancel ) 
+    #         echo "No config was changed!"
+    #         exit
+    #         ;;
+    # esac
 
 rm ~/.config/hypr/workspace.conf
 rm ~/.config/hypr/computer_binds.conf
