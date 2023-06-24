@@ -18,7 +18,7 @@
     "wlr/workspaces",
     "cpu",
     "custom/cputemp",
-    "temperature",
+    // "temperature",
     "custom/memory"
   ],
   "modules-center": [
