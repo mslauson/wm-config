@@ -1,5 +1,9 @@
 #!/bin/bash
 
+HYPR_SCRPTS=$HOME/.config/hypr/scripts
+
 notify-send "Open!"
 
 hyprctl keyword monitor "eDP-1, 3840x2400, 0x0, 1.5"
+
+$HYPR_SCRPTS/restart_waybar
