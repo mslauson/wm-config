@@ -24,7 +24,7 @@ tmux send-keys -t $NOTES:0 'nvim -c ":Neorg index"' C-m
 tmux select-window -t $NOTES:0 
 
 tmux new-window -t $REST:0 -n 'rest'
-tmux send-keys -t $REST:0 'pSql && nvim .' C-m
+tmux send-keys -t $REST:0 'pRest && nvim .' C-m
 tmux select-window -t $REST:0 
 
 tmux new-window -t $WORK:0 -n 'api'
