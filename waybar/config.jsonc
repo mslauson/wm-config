@@ -139,7 +139,7 @@
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-muted": "ﱝ Muted",
+    "format-muted": "󰝟 Muted",
     "on-click": "~/.config/hypr/scripts/volume_ctl.sh mute",
     "on-click-right": "kitty --class update -T update -e pulsemixer",
     "scroll-step": 1,
@@ -206,7 +206,7 @@
   //   "on-click": "~/.config/scripts/powermenu.sh"
   // }
   "custom/power": {
-    "format": "<span font='13' rise='1000'>襤</span>",
+    "format": "<span font='13' rise='1000'>󰐥</span>",
     "tooltip": false,
     "interval": "once",
     "on-click": "wlogout -c 5 -r 5 -p layer-shell"
