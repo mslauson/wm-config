@@ -139,7 +139,7 @@ tooltip {
     margin-right:  0px;  
     border-left: 0px;
     border-right: 0px;
-    padding-right: 10px;
+    padding-right: 5px;
     padding-left: 10px;    
 } 
 
@@ -154,7 +154,7 @@ tooltip {
     border-left: 0px;
     border-right: 0px;
     padding-right: 10px;
-    padding-left: 10px;    
+    /* padding-left: 10px;     */
 }   
 
 #taskbar {
