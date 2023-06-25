@@ -13,6 +13,8 @@ $scripts/tmux_init.sh &
 $scripts/launch_waybar &
 $scripts/tools/dynamic &
 
+$scripts/swidle &
+
 # wallpaper
 # $scripts/wall $config/wallpapers/4.jpg &
 
