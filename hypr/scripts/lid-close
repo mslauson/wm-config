@@ -7,8 +7,8 @@ MONITOR_STATUS=$(xrandr --query | grep 'HDMI-1 connected') # Replace HDMI-1 with
 if [[ "$AC_STATUS" -eq 1 && -n "$MONITOR_STATUS" ]]; then
     swaymsg output eDP-1 disable  # Replace eDP-1 with your laptop's internal display's id
 else
-    systemctl suspend
     ~/.config/hypr/scripts/lock
+    systemctl suspend
 fi
 
 $HYPR_SCRPTS/reset_waybar
