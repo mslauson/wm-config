@@ -9,4 +9,5 @@ hyprctl keyword monitor "eDP-1, 2880x1800, 0x0, 1.5"
 $HYPR_SCRPTS/restart_waybar
 $HYPR_SCRPTS/lock
 
-notify-send "finish"
+notify-send "finisonf && cd wm-config
+
