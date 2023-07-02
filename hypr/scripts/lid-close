@@ -5,10 +5,13 @@ AC_STATUS=$(cat /sys/class/power_supply/AC/online)  # 1 means AC power is connec
 MONITOR_STATUS=$(hyprctl monitors | grep '(ID 1)') # Replace HDMI-1 with your external monitor's id
 
 if [[ "$AC_STATUS" -eq 1 && -n "$MONITOR_STATUS" ]]; then
-    swaymsg output eDP-1 disable  # Replace eDP-1 with your laptop's internal display's id
+    # swaymsg output eDP-1 disable  # Replace eDP-1 with your laptop's internal display's id
+    hyprctl keyword monitor eDP-1,disable
+    $HYPR_SCRPTS/reset_waybar
+    notify-send "it worked"
 else
-    ~/.config/hypr/scripts/lock
-    systemctl suspend
+    notify-send "sadd face"
+    # ~/.config/hypr/scripts/lock
+    # systemctl suspend
 fi
 
-$HYPR_SCRPTS/reset_waybar
