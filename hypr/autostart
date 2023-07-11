@@ -11,14 +11,13 @@ dunst &
 # waybar
 $scripts/tmux_init.sh &
 $scripts/launch_waybar &
-$scripts/tools/dynamic &
 
 $scripts/swidle &
 
 # wallpaper
 # $scripts/wall $config/wallpapers/4.jpg &
 
-swaybg -m fill -i $config/wallpapers/1.jpg
+swaybg -m fill -i $config/wallpapers/endeavour-black-4k.png
 thunderbird &
 discord &
 signal-desktop &
