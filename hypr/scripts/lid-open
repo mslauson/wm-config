@@ -4,10 +4,7 @@ HYPR_SCRPTS=$HOME/.config/hypr/scripts
 
 notify-send "Open!"
 
-hyprctl keyword monitor "eDP-1, 2880x1800, 0x0, 1.5"
+hyprctl keyword monitor "eDP-1, 3840x2400, 0x0, 1.5"
 
 $HYPR_SCRPTS/restart_waybar
 $HYPR_SCRPTS/lock
-
-notify-send "finisonf && cd wm-config
-
