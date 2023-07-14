@@ -2,4 +2,6 @@
 
 HYPR_SCRPTS=$HOME/.config/hypr/scripts
 
-$HYPR_SCRPTS/kill_waybar && $HYPR_SCRPTS/launch_waybar
+$HYPR_SCRPTS/kill_waybar
+
+$HYPR_SCRPTS/launch_waybar
