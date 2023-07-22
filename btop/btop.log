@@ -11,3 +11,6 @@
 2023/06/30 (21:18:00) | ERROR: Stall in Runner thread, restarting!
 2023/06/30 (21:18:06) | ERROR: Stall in Runner thread, restarting!
 2023/06/30 (21:18:11) | ERROR: Stall in Runner thread, restarting!
+
+2023/07/20 (22:53:54) | ===> btop++ v.1.2.13
+2023/07/20 (22:53:54) | WARNING: Failed to get disk/partition stats for mount "/mnt/backup" with statvfs64 error code: 19. Ignoring...
