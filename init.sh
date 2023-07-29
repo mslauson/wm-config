@@ -3,17 +3,17 @@ currentPath=/home/mslauson/projects/config/wm-config
 echo "Which computer are we on today?" | lolcat
 COMPUTER="$(gum choose desktop thonk cancel)"
 echo "Initializing for $COMPUTER"
-    # case $COMPUTER in
-    #     desktop ) 
-    #
-    #         break;;
-    #     thonk )
-    #         break;;
-    #     Cancel ) 
-    #         echo "No config was changed!"
-    #         exit
-    #         ;;
-    # esac
+# case $COMPUTER in
+#     desktop )
+#
+#         break;;
+#     thonk )
+#         break;;
+#     Cancel )
+#         echo "No config was changed!"
+#         exit
+#         ;;
+# esac
 
 rm ~/.config/hypr/workspace.conf
 rm ~/.config/hypr/computer_binds.conf
@@ -21,16 +21,14 @@ rm ~/.config/hypr/computer_binds.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/$COMPUTER/workspace.conf ~/.config/hypr/workspace.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/$COMPUTER/computer_binds.conf ~/.config/hypr/computer_binds.conf
 # for dir in aconfmgr alacritty autostart BetterDiscord btop cava doom emacs dunst gtk-2.0 gtk-3.0 gtk-4.0 hypr helix i3 kitty Kvantum mako neofetch OpenRGB paru polybar qt5ct qt6ct ranger rofi swappy swaylock waybar wlogout xfce
-for dir in bat btop cava dunst fish hypr  wofi scripts starship swaylock waybar wlogout networkmanager-dmenu rofi
-do
-    rm -rf ~/.config/$dir
-    ln -s "$currentPath"/$dir ~/.config/$dir
+for dir in bat btop cava dunst fish hypr wofi ranger scripts starship swaylock waybar wlogout networkmanager-dmenu rofi; do
+	rm -rf ~/.config/$dir
+	ln -s "$currentPath"/$dir ~/.config/$dir
 done
 
-for item in .xprofile .starship.toml
-do
-  rm -rf ~/$item
-  ln -s "$currentPath"/$item ~/$item
+for item in .xprofile .starship.toml; do
+	rm -rf ~/$item
+	ln -s "$currentPath"/$item ~/$item
 done
 
 rm -rf /home/mslauson/projects/config/wm-config/hypr/store
