@@ -21,7 +21,7 @@ rm ~/.config/hypr/computer_binds.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/$COMPUTER/workspace.conf ~/.config/hypr/workspace.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/$COMPUTER/computer_binds.conf ~/.config/hypr/computer_binds.conf
 # for dir in aconfmgr alacritty autostart BetterDiscord btop cava doom emacs dunst gtk-2.0 gtk-3.0 gtk-4.0 hypr helix i3 kitty Kvantum mako neofetch OpenRGB paru polybar qt5ct qt6ct ranger rofi swappy swaylock waybar wlogout xfce
-for dir in bat btop cava dunst fish hypr wofi ranger scripts starship swaylock waybar wlogout networkmanager-dmenu rofi; do
+for dir in bat btop cava dunst fish gtk-2.0 gtk-3.0 gtk-4.0 hypr wofi ranger scripts starship swaylock waybar wlogout networkmanager-dmenu rofi; do
 	rm -rf ~/.config/$dir
 	ln -s "$currentPath"/$dir ~/.config/$dir
 done
