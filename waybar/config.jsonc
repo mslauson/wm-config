@@ -26,10 +26,11 @@
   ],
   "modules-right": [
     "tray",
-    "custom/caffeine",
+    // "custom/caffeine",
     "custom/updates",
     "network",
-    "custom/language",
+    // "custom/language",
+    "keyboard-state",
     "pulseaudio",
     "pulseaudio#microphone",
     "battery",
@@ -79,6 +80,14 @@
     "max-length": 15,
     "on-click": "~/.config/waybar/scripts/cpu.sh --popup"
   },
+  "keyboard-state": {
+    "capslock": true,
+    "format": "󰌌  {icon}",
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
   "custom/cputemp": {
     "exec": "~/.config/waybar/scripts/cpu-temp.sh",
     "interval": 1,
@@ -117,11 +126,11 @@
   },
   "network": {
     "format-wifi": "直 {essid}",
-    "format-ethernet": " ETH",
+    "format-ethernet": "󰈀 ETH",
     "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": " Disconnected",
-    "tooltip-format-ethernet": " {bandwidthUpBits}  {bandwidthDownBits}  ",
-    "tooltip-format-wifi": "  {signalStrength}% |  {bandwidthUpBits}  {bandwidthDownBits}  ",
+    "format-disconnected": "󰈂 Disconnected",
+    "tooltip-format-ethernet": "{bandwidthDownBits}  {bandwidthUpBits}  ",
+    "tooltip-format-wifi": "󰤨 {signalStrength}% |  {bandwidthDownBits}  {bandwidthUpBits}  ",
     "on-click": "~/.config/waybar/scripts/networkmanager.sh"
   },
   "custom/language": {

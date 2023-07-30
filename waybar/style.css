@@ -59,17 +59,16 @@ tooltip {
 }
 
 #custom-launcher {
-    color: #d8dee9;
-    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-    border-radius: 10px 0px 0px 10px;
-    padding: 5 5 5 10px;
-    margin-top: 14px;
-    margin-bottom: 15px;
-    border-left: 5px;
-    border-right: 5px;
-    margin-left: 5px;
-    margin-right: 0px;
-
+  color: #d8dee9;
+  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+  border-radius: 10px 0px 0px 10px;
+  padding: 5 5 5 10px;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  border-left: 5px;
+  border-right: 5px;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 
 #workspaces button {
