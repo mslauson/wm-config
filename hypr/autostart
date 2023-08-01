@@ -7,6 +7,11 @@ scripts=$config/scripts
 
 # notification daemon
 dunst &
+swaybg -m fill -i $config/wallpapers/endeavour-black-4k.png &
+thunderbird &
+discord &
+signal-desktop &
+config-init.sh &
 
 # waybar
 $scripts/tmux_init.sh &
@@ -17,11 +22,6 @@ $scripts/swidle &
 # wallpaper
 # $scripts/wall $config/wallpapers/4.jpg &
 
-swaybg -m fill -i $config/wallpapers/endeavour-black-4k.png
-thunderbird &
-discord &
-signal-desktop &
-config-init.sh &
 # effects
 $scripts/rgb &
 
