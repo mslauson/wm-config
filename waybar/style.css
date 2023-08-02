@@ -2,7 +2,8 @@
   border: none;
   border-radius: 0;
   font-family:
-    Cartograph CF Nerd Font,
+    /* Cartograph CF Nerd Font, */
+    JetBrainsMono Nerd Font,
     monospace;
   font-weight: bold;
   font-size: 12px;
