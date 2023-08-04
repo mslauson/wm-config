@@ -1,7 +1,7 @@
 currentPath=/home/mslauson/projects/config/wm-config
 
 echo "Which computer are we on today?" | lolcat
-COMPUTER="$(gum choose desktop thonk cancel)"
+COMPUTER="$(gum choose desktop thonk devone cancel)"
 echo "Initializing for $COMPUTER"
 # case $COMPUTER in
 #     desktop )
