@@ -110,6 +110,7 @@ tooltip {
   padding-left: 5px;
 }
 
+#network,
 #cpu {
   color: #7f7fff;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
@@ -238,18 +239,18 @@ tooltip {
   padding-left: 10px;
 }
 
-#network {
-  color: #39404f;
-  background: linear-gradient(85deg, #f0c6c6 5%, #f5a97f 45%, #f5a97f 75%);
-  border-radius: 10px 0px 0px 10px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 5px;
-  padding-left: 10px;
-}
+/* #network { */
+/*   color: #39404f; */
+/*   background: linear-gradient(85deg, #f0c6c6 5%, #f5a97f 45%, #f5a97f 75%); */
+/*   border-radius: 10px 0px 0px 10px; */
+/*   margin-top: 14px; */
+/*   margin-bottom: 15px; */
+/*   margin-left: 5px; */
+/*   border-left: 0px; */
+/*   border-right: 0px; */
+/*   padding-right: 5px; */
+/*   padding-left: 10px; */
+/* } */
 
 #custom-language {
   color: #39404f;
