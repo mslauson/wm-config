@@ -8,14 +8,20 @@ case $CHOICE in
 "LG")
 	echo "Initializing for LG only" | lolcat
 	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor DP-2,disable
+	rm -rf $HOME/.config/hypr/workspace.conf
+	ln -s $Home/.config/hypr/workspace_lg.conf $HOME/.config/hypr/workspace.conf
+
 	;;
 "UW")
 	echo "Initializing for UW only" | lolcat
 	hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1" && hyprctl keyword monitor DP-1,disable
+	rm -rf $HOME/.config/hypr/workspace.conf
+	ln -s $Home/.config/hypr/workspace_uw.conf $HOME/.config/hypr/workspace.conf
 	;;
 "Both")
 	echo "Initializing for Both" | lolcat
 	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1"
+	ln -s $Home/.config/hypr/workspace.conf $HOME/.config/hypr/workspace.conf
 	;;
 "Cancel")
 	echo "Canceling" | lolcat
