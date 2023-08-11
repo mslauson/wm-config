@@ -110,8 +110,8 @@ tooltip {
   padding-left: 5px;
 }
 
-#cpu {
-  color: #7f7fff;
+/* left */
+#cpu #network #trays {
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   border-radius: 10px 0px 0px 10px;
   margin-top: 14px;
@@ -124,10 +124,14 @@ tooltip {
   padding-left: 10px;
 }
 
-#custom-cputemp {
-  color: #f3a3bc;
+/* middle */
+#battery
+  #backlight
+  #custom-cputemp
+  #pulseaudio
+  #pulseaudio.microphone
+  #keyboard-state {
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-  /* border-radius: 0px 10px 10px 0px; */
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 0px;
@@ -138,8 +142,8 @@ tooltip {
   padding-left: 10px;
 }
 
-#custom-memory {
-  color: #b7bdf8;
+/* right  */
+#custom-memory #keyboard-state #custom-updates {
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   border-radius: 0px 10px 10px 0px;
   margin-top: 14px;
@@ -149,7 +153,6 @@ tooltip {
   border-left: 0px;
   border-right: 0px;
   padding-right: 10px;
-  /* padding-left: 10px;     */
 }
 
 #taskbar {
@@ -189,19 +192,6 @@ tooltip {
   margin-right: 60px;
 }
 
-#tray {
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-right: 0px;
-  margin-left: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 10px;
-}
-
 #custom-test {
   color: #fab387;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
@@ -226,45 +216,7 @@ tooltip {
   padding-left: 10px;
 }
 
-#custom-updates {
-  color: #39404f;
-  background: linear-gradient(85deg, #f4dbd6 5%, #f0c6c6 45%, #f0c6c6 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#network {
-  color: #39404f;
-  background: linear-gradient(85deg, #f0c6c6 5%, #f5a97f 45%, #f5a97f 75%);
-  border-radius: 10px 0px 0px 10px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 5px;
-  padding-left: 10px;
-}
-
 #custom-language {
-  color: #39404f;
-  background: linear-gradient(85deg, #f5a97f 5%, #fd807e 45%, #fd807e 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-right: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#keyboard-state {
   color: #39404f;
   background: linear-gradient(85deg, #f5a97f 5%, #fd807e 45%, #fd807e 75%);
   border-radius: 0px 10px 10px 0px;
@@ -370,4 +322,43 @@ tooltip {
   border-right: 0px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+#cpu {
+  color: #7f7fff;
+}
+
+#custom-cputemp {
+  color: #f3a3bc;
+}
+
+#custom-memory {
+  color: #b7bdf8;
+}
+
+#custom-updates {
+  color: #39404f;
+}
+#network {
+  color: #39404f;
+}
+
+#pulseaudio {
+  color: #39404f;
+}
+
+#pulseaudio.microphone {
+  color: #39404f;
+}
+
+#backlight {
+  color: #39404f;
+}
+
+#battery {
+  color: #39404f;
+}
+
+#keyboard-state {
+  color: #39404f;
 }
