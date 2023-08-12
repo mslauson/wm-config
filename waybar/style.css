@@ -110,9 +110,10 @@ tooltip {
   padding-left: 5px;
 }
 
-#network,
+/* left */
+#tray,
+#battery,
 #cpu {
-  color: #7f7fff;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   border-radius: 10px 0px 0px 10px;
   margin-top: 14px;
@@ -122,13 +123,16 @@ tooltip {
   border-left: 0px;
   border-right: 0px;
   padding-right: 5px;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
+/* center */
+#network,
+#keyboard-state,
+#custom-updates,
 #custom-cputemp {
   color: #f3a3bc;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-  /* border-radius: 0px 10px 10px 0px; */
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 0px;
@@ -139,6 +143,9 @@ tooltip {
   padding-left: 10px;
 }
 
+/* right */
+#backlight,
+#pulseaudio,
 #custom-memory {
   color: #b7bdf8;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
@@ -150,7 +157,6 @@ tooltip {
   border-left: 0px;
   border-right: 0px;
   padding-right: 10px;
-  /* padding-left: 10px;     */
 }
 
 #taskbar {
@@ -190,19 +196,6 @@ tooltip {
   margin-right: 60px;
 }
 
-#tray {
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-right: 0px;
-  margin-left: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 10px;
-}
-
 #custom-test {
   color: #fab387;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
@@ -227,57 +220,6 @@ tooltip {
   padding-left: 10px;
 }
 
-#custom-updates {
-  color: #39404f;
-  background: linear-gradient(85deg, #f4dbd6 5%, #f0c6c6 45%, #f0c6c6 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-/* #network { */
-/*   color: #39404f; */
-/*   background: linear-gradient(85deg, #f0c6c6 5%, #f5a97f 45%, #f5a97f 75%); */
-/*   border-radius: 10px 0px 0px 10px; */
-/*   margin-top: 14px; */
-/*   margin-bottom: 15px; */
-/*   margin-left: 5px; */
-/*   border-left: 0px; */
-/*   border-right: 0px; */
-/*   padding-right: 5px; */
-/*   padding-left: 10px; */
-/* } */
-
-#custom-language {
-  color: #39404f;
-  background: linear-gradient(85deg, #f5a97f 5%, #fd807e 45%, #fd807e 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-right: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#keyboard-state {
-  color: #39404f;
-  background: linear-gradient(85deg, #f5a97f 5%, #fd807e 45%, #fd807e 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-right: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
 #custom-pipewire {
   color: #9c9cff;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #fd807e 75%);
@@ -288,61 +230,6 @@ tooltip {
   border-left: 0px;
   border-right: 0px;
   padding-right: 5px;
-  padding-left: 10px;
-}
-
-#pulseaudio {
-  color: #39404f;
-  background: linear-gradient(85deg, #fd807e 5%, #7cb6f5 45%, #7cb6f5 75%);
-  border-radius: 10px 0px 0px 10px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 5px;
-  padding-left: 10px;
-}
-
-#pulseaudio.microphone {
-  color: #39404f;
-  background: linear-gradient(85deg, #7cb6f5 5%, #c6a0f6 45%, #c6a0f6 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-#battery {
-  color: #39404f;
-  background: linear-gradient(85deg, #c6a0f6 5%, #a6d189 45%, #a6d189 75%);
-  border-radius: 10px 0px 0px 10px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 5px;
-  padding-left: 10px;
-}
-
-#backlight {
-  color: #39404f;
-  background: linear-gradient(85deg, #a6d189 5%, #eed49f 45%, #eed49f 75%);
-  border-radius: 0px 10px 10px 0px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding-right: 10px;
   padding-left: 10px;
 }
 
@@ -371,4 +258,23 @@ tooltip {
   border-right: 0px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+/* colors */
+#network,
+#cpu {
+  color: #7f7fff;
+}
+
+#custom-separator {
+  color: #11111b;
+  background: #39404f;
+  margin-top: 14px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
 }

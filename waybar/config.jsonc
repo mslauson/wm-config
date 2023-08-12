@@ -15,10 +15,12 @@
   "modules-left": [
     "clock",
     "custom/launcher",
+    "custom/separator",
     "wlr/workspaces",
     "cpu",
+    "custom/separator",
     "custom/cputemp",
-    // "temperature",
+    "custom/separator",
     "custom/memory"
   ],
   "modules-center": [
@@ -26,16 +28,18 @@
   ],
   "modules-right": [
     "tray",
-    // "custom/caffeine",
+    "custom/separator",
     "custom/updates",
+    "custom/separator",
     "network",
-    // "custom/language",
+    "custom/separator",
     "keyboard-state",
+    "custom/separator",
     "pulseaudio",
-    "pulseaudio#microphone",
     "battery",
     "backlight",
     "custom/wprofi",
+    "custom/separator",
     "custom/power"
   ],
   "hyprland/window": {
@@ -209,11 +213,6 @@
     "tooltip": false,
     "min-length": 6
   },
-  // "custom/power": {
-  //   "format": "<span font='13' rise='1000'>襤</span>",
-  //   "tooltip": false,
-  //   "on-click": "~/.config/scripts/powermenu.sh"
-  // }
   "custom/power": {
     "format": "<span font='13' rise='1000'>󰐥</span>",
     "tooltip": false,
@@ -225,5 +224,10 @@
     "tooltip": false,
     "interval": "once",
     "on-click": "~/.config/hypr/scripts/wallpaper_rofi.sh"
+  },
+  "custom/separator": {
+    "format": "|",
+    "interval": "once",
+    "tooltip": false
   }
 }
