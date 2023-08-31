@@ -1,3 +1,7 @@
 hypr/store
 hypr/workspace.conf
 hypr/computer_binds.conf
+systemd/user/timers.target.wants
+systemd/user/eos-update-notifier.service
+systemd/user/eos-update-notifier.timer
+hypr/vars.conf
