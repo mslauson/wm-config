@@ -1,3 +1,3 @@
 #!/bin/sh
 
-kitty -e $SHELL -c 'paru'
+kitty -e $SHELL -c 'yay -Syyu'
