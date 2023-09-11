@@ -27,3 +27,14 @@
 
 2023/08/15 (21:44:37) | ===> btop++ v.1.2.13
 2023/08/15 (21:44:37) | ERROR: Stall in Runner thread, restarting!
+
+2023/09/04 (02:46:21) | ===> btop++ v.1.2.13
+2023/09/04 (02:46:21) | INFO: Logger set to INFO
+2023/09/04 (02:46:24) | INFO: Logger set to INFO
+2023/09/04 (02:46:24) | INFO: Logger set to DEBUG
+2023/09/04 (02:46:25) | INFO: Logger set to INFO
+2023/09/04 (02:49:02) | INFO: Quitting! Runtime: 00:05:58
+
+2023/09/04 (03:11:59) | ===> btop++ v.1.2.13
+2023/09/04 (03:11:59) | INFO: Logger set to INFO
+2023/09/04 (03:11:59) | INFO: Running on /dev/pts/6
