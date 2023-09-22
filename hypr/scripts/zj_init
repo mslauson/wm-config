@@ -1,0 +1,5 @@
+#!/bin/bash
+
+zellij --session work &
+zellij --session config &
+zellij --session ssh &

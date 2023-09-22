@@ -13,9 +13,7 @@ discord &
 signal-desktop &
 config-init.sh &
 
-# waybar
 $scripts/tmux_init.sh &
-$scripts/launch_waybar &
 
 $scripts/swidle &
 
