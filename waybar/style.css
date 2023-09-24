@@ -109,6 +109,7 @@ tooltip {
 }
 
 /* left */
+#cava,
 #tray,
 #battery,
 #cpu {
@@ -126,7 +127,6 @@ tooltip {
 
 /* center */
 #network,
-#keyboard-state,
 #custom-updates,
 #custom-cputemp {
   color: #f3a3bc;
@@ -143,6 +143,7 @@ tooltip {
 
 /* right */
 #backlight,
+#keyboard-state,
 #pulseaudio,
 #custom-memory {
   color: #b7bdf8;
