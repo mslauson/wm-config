@@ -1,3 +1,4 @@
+@import "./themes/rose-pine.css";
 * {
   border: none;
   border-radius: 0;
@@ -16,11 +17,35 @@ window#waybar {
 }
 
 tooltip {
-  background: #39404f;
   border-radius: 10px;
   border-width: 2px;
   border-style: solid;
-  border-color: #fd807e;
+  border-color: @foam;
+}
+
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#custom-cputemp,
+#custom-launcher,
+#custom-separator,
+#custom-wprofi,
+#custom-power,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#cpu,
+#cava,
+#temperature,
+#keyboard-state,
+#pulseaudio,
+#custom-memory,
+#backlight {
+  background: @base;
 }
 
 #custom-language,
@@ -34,15 +59,13 @@ tooltip {
 #workspaces,
 #tray,
 #backlight {
-  background: #39404f;
   padding: 0px 10px;
   margin: 3px 0px;
   /*border: 1px solid #39404f; */
 }
 
 #clock {
-  color: #f5a97f;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+  color: @gold;
   border-radius: 10px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -56,7 +79,6 @@ tooltip {
 
 #custom-launcher {
   color: #d8dee9;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   border-radius: 10px 0px 0px 10px;
   padding: 5 5 5 10px;
   margin-top: 14px;
@@ -74,30 +96,27 @@ tooltip {
 }
 
 #workspaces button.active {
-  color: #fd807e;
+  color: @pine;
 }
 
 #workspaces button.focused {
-  color: #fd807e;
-  background: #39404f;
+  color: @foam;
   border-radius: 10px;
 }
 
 #workspaces button.urgent {
-  color: #fd807e;
-  background: #39404f;
+  color: @love;
   border-radius: 10px;
 }
 
 #workspaces button:hover {
   background: #39404f;
-  color: #7f7fff;
+  color: @iris;
   border-radius: 1px;
 }
 
 #workspaces {
   color: #d8dee9;
-  background: #39404f;
   border-radius: 0px 10px 10px 0px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -113,7 +132,6 @@ tooltip {
 #tray,
 #battery,
 #cpu {
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   border-radius: 10px 0px 0px 10px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -129,8 +147,7 @@ tooltip {
 #network,
 #custom-updates,
 #custom-cputemp {
-  color: #f3a3bc;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+  color: @love;
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 0px;
@@ -146,8 +163,7 @@ tooltip {
 #keyboard-state,
 #pulseaudio,
 #custom-memory {
-  color: #b7bdf8;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+  color: @iris;
   border-radius: 0px 10px 10px 0px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -196,7 +212,7 @@ tooltip {
 }
 
 #custom-test {
-  color: #fab387;
+  color: @rose;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   margin-top: 14px;
   margin-bottom: 15px;
@@ -220,9 +236,8 @@ tooltip {
 }
 
 #custom-pipewire {
-  color: #9c9cff;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #fd807e 75%);
   border-radius: 10px 0px 0px 10px;
+  color: @iris;
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 5px;
@@ -233,8 +248,7 @@ tooltip {
 }
 
 #custom-wprofi {
-  color: #7f7fff;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+  color: @iris;
   border-radius: 10px 0px 0px 10px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -246,8 +260,7 @@ tooltip {
   padding-left: 10px;
 }
 #custom-power {
-  color: #ed8796;
-  background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+  color: @love;
   border-radius: 0px 10px 10px 0px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -262,12 +275,11 @@ tooltip {
 /* colors */
 #network,
 #cpu {
-  color: #7f7fff;
+  color: @iris;
 }
 
 #custom-separator {
-  color: #11111b;
-  background: #39404f;
+  color: @muted;
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 0px;
@@ -278,15 +290,6 @@ tooltip {
   padding-left: 5px;
 }
 
-#cava  {
-  /* background: linear-gradient( */
-  color:   #94e2d5 
-  /*   #89dceb, */
-  /*   #74c7ec, */
-  /*   #89b4fa, */
-  /*   #cba6f7, */
-  /*   #f5c2e7, */
-  /*   #eba0ac, */
-  /*   #f38ba8 */
-  /* ); */
+#cava {
+  color: @rose;
 }

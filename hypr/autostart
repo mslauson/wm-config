@@ -7,7 +7,7 @@ scripts=$config/scripts
 
 # notification daemon
 dunst &
-swaybg -m fill -i $config/wallpapers/endeavour-black-4k.png &
+swaybg -m fill -i $config/wallpapers/rose_pine_shape.png &
 thunderbird &
 discord &
 signal-desktop &
