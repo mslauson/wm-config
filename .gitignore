@@ -6,3 +6,4 @@ systemd/user/eos-update-notifier.service
 systemd/user/eos-update-notifier.timer
 hypr/vars.conf
 btop/btop.log
+waybar/config.jsonc
