@@ -278,15 +278,15 @@ tooltip {
   padding-left: 5px;
 }
 
-#cava bars {
-  background: linear-gradient(
-    #94e2d5,
-    #89dceb,
-    #74c7ec,
-    #89b4fa,
-    #cba6f7,
-    #f5c2e7,
-    #eba0ac,
-    #f38ba8
-  );
+#cava  {
+  /* background: linear-gradient( */
+  color:   #94e2d5 
+  /*   #89dceb, */
+  /*   #74c7ec, */
+  /*   #89b4fa, */
+  /*   #cba6f7, */
+  /*   #f5c2e7, */
+  /*   #eba0ac, */
+  /*   #f38ba8 */
+  /* ); */
 }
