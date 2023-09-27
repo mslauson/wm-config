@@ -92,7 +92,7 @@
     }
   },
   "temperature": {
-    "thermal-zone": 1,
+    "thermal-zone": "2",
     "format": "",
     "format-alt-click": "click-right",
     "format-alt": " {temperatureC}°C",
