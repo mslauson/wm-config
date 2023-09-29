@@ -5,5 +5,5 @@ HYPR_SCRPTS=$HOME/.config/hypr/scripts
 swayidle \
 	timeout 900 $HYPR_SCRPTS/lock \
 	timeout 1800 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on' \
-	timeout 3600 'systemctl suspend' \
 	before-sleep $HYPR_SCRPTS/lock &
+# timeout 3601 'systemctl suspend' \

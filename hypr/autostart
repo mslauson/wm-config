@@ -13,8 +13,6 @@ discord &
 signal-desktop &
 config-init.sh &
 
-$scripts/tmux_init.sh &
-
 $scripts/swidle &
 
 # wallpaper
