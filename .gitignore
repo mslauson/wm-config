@@ -8,3 +8,4 @@ hypr/vars.conf
 btop/btop.log
 waybar/config.jsonc
 waybar/config.jsonc
+waybar/style.css

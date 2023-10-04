@@ -30,8 +30,12 @@ for dir in bat btop cava dunst gtk-2.0 gtk-3.0 gtk-4.0 hypr wofi ranger scripts 
 	ln -s "$currentPath"/$dir ~/.config/$dir
 done
 
+echo "Configuring waybar" | lolcat
 rm -rf ~/.config/waybar/config.jsonc
+rm -rf ~/.config/waybar/style.css
+
 ln -s /home/mslauson/projects/config/wm-config/waybar/computers/"$COMPUTER"/config.jsonc ~/.config/waybar/config.jsonc
+ln -s /home/mslauson/projects/config/wm-config/waybar/computers/"$COMPUTER"/style.css ~/.config/waybar/style.css
 
 for item in .xprofile .starship.toml; do
 	rm -rf ~/$item
