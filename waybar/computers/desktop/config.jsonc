@@ -30,6 +30,8 @@
     "pulseaudio",
     "tray",
     "custom/separator",
+    "custom/caffeine",
+    "custom/separator",
     "custom/updates",
     "custom/separator",
     "network",
@@ -125,7 +127,8 @@
     "exec": "~/.config/waybar/scripts/caffeine.sh",
     "return-type": "json",
     "interval": 3,
-    "format-icons": ["﯈", ""],
+    "on-click": "exec,caffiene",
+    "format-icons": ["󰒲", ""],
     "format": "{icon}"
   },
   "custom/updates": {

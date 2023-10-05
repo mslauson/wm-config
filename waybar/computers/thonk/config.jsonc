@@ -20,6 +20,7 @@
     "cpu",
     "custom/separator",
     "temperature",
+    "custom/cputemp",
     "custom/separator",
     "custom/memory"
   ],
@@ -28,6 +29,8 @@
     "cava",
     "pulseaudio",
     "tray",
+    "custom/separator",
+    "custom/caffeine",
     "custom/separator",
     "custom/updates",
     "custom/separator",
@@ -91,8 +94,13 @@
       "unlocked": ""
     }
   },
+  "custom/cputemp": {
+    "exec": "~/.config/waybar/scripts/cpu-temp.sh",
+    "interval": 1,
+    "on-click": "~/.config/waybar/scripts/btop.sh"
+  },
   "temperature": {
-    "thermal-zone": "2",
+    "thermal-zone": 1,
     "format": "",
     "format-alt-click": "click-right",
     "format-alt": " {temperatureC}°C",
@@ -119,7 +127,8 @@
     "exec": "~/.config/waybar/scripts/caffeine.sh",
     "return-type": "json",
     "interval": 3,
-    "format-icons": ["﯈", ""],
+    "on-click": "exec,caffiene",
+    "format-icons": ["󰒲", ""],
     "format": "{icon}"
   },
   "custom/updates": {
@@ -192,7 +201,7 @@
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
-    "format-icons": ["󰃜", "󰃛", "󰃚"],
+    "format-icons": ["", "", ""],
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
     "tooltip": false,

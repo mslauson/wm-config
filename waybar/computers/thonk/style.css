@@ -1,4 +1,4 @@
-@import "./themes/rose-pine.css";
+@import "./themes/catppuccin-mocha.css";
 * {
   border: none;
   border-radius: 0;
@@ -20,7 +20,7 @@ tooltip {
   border-radius: 10px;
   border-width: 2px;
   border-style: solid;
-  border-color: @foam;
+  border-color: @teal;
 }
 
 #custom-language,
@@ -65,7 +65,7 @@ tooltip {
 }
 
 #clock {
-  color: @gold;
+  color: @peach;
   border-radius: 10px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -100,18 +100,18 @@ tooltip {
 }
 
 #workspaces button.focused {
-  color: @foam;
+  color: @teal;
   border-radius: 10px;
 }
 
 #workspaces button.urgent {
-  color: @love;
+  color: @red;
   border-radius: 10px;
 }
 
 #workspaces button:hover {
   background: #39404f;
-  color: @iris;
+  color: @mauve;
   border-radius: 1px;
 }
 
@@ -145,9 +145,10 @@ tooltip {
 
 /* center */
 #network,
+#custom-cafeine,
 #custom-updates,
 #custom-cputemp {
-  color: @love;
+  color: @red;
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 0px;
@@ -163,7 +164,7 @@ tooltip {
 #keyboard-state,
 #pulseaudio,
 #custom-memory {
-  color: @iris;
+  color: @mauve;
   border-radius: 0px 10px 10px 0px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -212,7 +213,7 @@ tooltip {
 }
 
 #custom-test {
-  color: @rose;
+  color: @pink;
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
   margin-top: 14px;
   margin-bottom: 15px;
@@ -222,22 +223,9 @@ tooltip {
   border-right: 2px;
 }
 
-#custom-caffeine {
-  color: #39404f;
-  background: linear-gradient(85deg, #f4dbd6 5%, #f4dbd6 45%, #f4dbd6 75%);
-  border-radius: 10px 0px 0px 10px;
-  margin-top: 14px;
-  margin-bottom: 15px;
-  margin-left: 0px;
-  border-right: 0px;
-  margin-left: 10px;
-  padding-right: 5px;
-  padding-left: 10px;
-}
-
 #custom-pipewire {
   border-radius: 10px 0px 0px 10px;
-  color: @iris;
+  color: @mauve;
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 5px;
@@ -248,7 +236,7 @@ tooltip {
 }
 
 #custom-wprofi {
-  color: @iris;
+  color: @green;
   border-radius: 10px 0px 0px 10px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -260,7 +248,7 @@ tooltip {
   padding-left: 10px;
 }
 #custom-power {
-  color: @love;
+  color: @red;
   border-radius: 0px 10px 10px 0px;
   margin-top: 14px;
   margin-bottom: 15px;
@@ -275,11 +263,11 @@ tooltip {
 /* colors */
 #network,
 #cpu {
-  color: @iris;
+  color: @mauve;
 }
 
 #custom-separator {
-  color: @muted;
+  color: @surface0;
   margin-top: 14px;
   margin-bottom: 15px;
   margin-left: 0px;
@@ -289,7 +277,9 @@ tooltip {
   padding-right: 5px;
   padding-left: 5px;
 }
-
+#custom-caffeine {
+  color: @flamingo;
+}
 #cava {
-  color: @rose;
+  color: @peach;
 }
