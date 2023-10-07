@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Fleet with .profile
+Comment=Fleet IDE sourced with .profile
+Exec=/home/mslauson/installs/custom-scripts/jetbrains/jetbrains-profile-launcher fleet
+Icon=/home/mslauson/.local/share/JetBrains/Toolbox/apps/fleet/bin/fleet.svg
+Terminal=false
+Categories=Development;IDE;

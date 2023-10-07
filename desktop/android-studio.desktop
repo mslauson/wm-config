@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Type=Application
+Name=Android Studio with .profile
+Comment=Android Studio IDE sourced with .profile
+Exec=/home/mslauson/installs/custom-scripts/jetbrains/jetbrains-profile-launcher studio
+Icon=/home/mslauson/.local/share/JetBrains/Toolbox/apps/studio/bin/studio.svg
+Terminal=false
+Categories=Development;IDE;

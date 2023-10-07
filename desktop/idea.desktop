@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Type=Application
+Name=Idea with .profile
+Comment=Idea IDE sourced with .profile
+Exec=/home/mslauson/installs/custom-scripts/jetbrains/jetbrains-profile-launcher idea
+Icon=/home/mslauson/.local/share/JetBrains/Toolbox/apps/idea/bin/idea.svg
+Terminal=false
+Categories=Development;IDE;

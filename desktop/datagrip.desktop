@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=DataGrip with .profile
+Comment=DataGrip IDE sourced with .profile
+Exec=/home/mslauson/installs/custom-scripts/jetbrains/jetbrains-profile-launcher datagrip
+Icon=/home/mslauson/.local/share/JetBrains/Toolbox/apps/datagrip/bin/datagrip.svg
+Terminal=false
+Categories=Development;IDE;

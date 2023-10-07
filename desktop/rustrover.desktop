@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=RustRover with .profile
+Comment=RustRover IDE sourced with .profile
+Exec=/home/mslauson/installs/custom-scripts/jetbrains/jetbrains-profile-launcher rustrover
+Icon=/home/mslauson/.local/share/JetBrains/Toolbox/apps/rustrover/bin/rustrover.svg
+Terminal=false
+Categories=Development;IDE;

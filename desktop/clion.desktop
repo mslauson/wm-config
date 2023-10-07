@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Type=Application
+Name=Clion with .profile
+Comment=Clion IDE sourced with .profile
+Exec=/home/mslauson/installs/custom-scripts/jetbrains/jetbrains-profile-launcher clion
+Icon=/home/mslauson/.local/share/JetBrains/Toolbox/apps/clion/bin/clion.svg
+Terminal=false
+Categories=Development;IDE;
