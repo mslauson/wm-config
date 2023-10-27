@@ -1,1 +1,1 @@
-plugins = ["Duckonaut/split-monitor-workspaces"]
+plugins = ["Duckonaut/split-monitor-workspaces", "hyprwm/hyprland-plugins"]
