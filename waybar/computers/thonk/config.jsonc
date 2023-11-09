@@ -28,10 +28,9 @@
   "modules-right": [
     "cava",
     "pulseaudio",
-    "custom/blank",
-    "tray",
-    "custom/separator",
     "custom/updates",
+    "custom/separator",
+    "tray",
     "custom/separator",
     "network",
     "custom/separator",

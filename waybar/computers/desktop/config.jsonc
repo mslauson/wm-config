@@ -28,12 +28,9 @@
   "modules-right": [
     "cava",
     "pulseaudio",
-    "custom/blank",
-    "tray",
-    // "custom/separator",
-    // "custom/caffeine",
-    "custom/separator",
     "custom/updates",
+    "custom/separator",
+    "tray",
     "custom/separator",
     "network",
     "custom/separator",
@@ -225,8 +222,8 @@
     "interval": "once",
     "tooltip": false
   },
-  "custom/blank": {
-    "format": "",
+  "custom/blankleft": {
+    "format": " ",
     "interval": "once",
     "tooltip": false
   },
