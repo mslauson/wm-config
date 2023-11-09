@@ -211,13 +211,13 @@
     "format": "<span font='13' rise='1000'>󰐥</span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "wlogout -c 5 -r 5 -p layer-shell"
+    "on-click": "~//"
   },
   "custom/wprofi": {
     "format": "<span color='#7F7FFF' font='13' rise='1000'> </span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "~/.config/hypr/scripts/wallpaper_rofi.sh"
+    "on-click": "~/.config/rofi/deathemonic/bin/powermenu"
   },
   "custom/separator": {
     "format": "|",
