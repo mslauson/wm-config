@@ -29,6 +29,7 @@ tooltip {
 #custom-cputemp,
 #custom-launcher,
 #custom-separator,
+#custom-blank,
 #custom-wprofi,
 #custom-power,
 #window,
@@ -51,6 +52,7 @@ tooltip {
 #custom-language,
 #custom-updates,
 #custom-caffeine,
+#custom-blank,
 #window,
 #clock,
 #battery,
@@ -129,7 +131,7 @@ tooltip {
 
 /* left */
 #cava,
-#tray,
+#custom-blank,
 #battery,
 #cpu {
   border-radius: 10px 0px 0px 10px;
@@ -145,6 +147,7 @@ tooltip {
 
 /* center */
 #network,
+#tray,
 #custom-cafeine,
 #custom-updates,
 #custom-cputemp {

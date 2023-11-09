@@ -28,6 +28,7 @@
   "modules-right": [
     "cava",
     "pulseaudio",
+    "custom/blank",
     "tray",
     // "custom/separator",
     // "custom/caffeine",
@@ -211,16 +212,21 @@
     "format": "<span font='13' rise='1000'>󰐥</span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "~//"
+    "on-click": "~/.config/rofi/deathemonic/bin/powermenu"
   },
   "custom/wprofi": {
     "format": "<span color='#7F7FFF' font='13' rise='1000'> </span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "~/.config/rofi/deathemonic/bin/powermenu"
+    "on-click": "~/.config/hypr/scripts/wallpaper_rofi.sh"
   },
   "custom/separator": {
     "format": "|",
+    "interval": "once",
+    "tooltip": false
+  },
+  "custom/blank": {
+    "format": "",
     "interval": "once",
     "tooltip": false
   },
