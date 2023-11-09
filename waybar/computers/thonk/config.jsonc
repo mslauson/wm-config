@@ -32,6 +32,8 @@
     "custom/separator",
     "tray",
     "custom/separator",
+    "custom/bluetooth",
+    "custom/separator",
     "network",
     "custom/separator",
     "keyboard-state",
@@ -222,10 +224,11 @@
     "interval": "once",
     "tooltip": false
   },
-  "custom/blank": {
-    "format": "",
+  "custom/bluetooth": {
+    "format": "<span font='12' rise='1000'>󰂯</span>",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "~/.config/rofi/deathemonic/bin/bluetooth"
   },
   "cava": {
     "cava_config": "/home/mslauson/.config/cava/config",
