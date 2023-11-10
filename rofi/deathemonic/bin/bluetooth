@@ -287,7 +287,7 @@ show_menu() {
 }
 
 # Rofi command to pipe into, can add any options here
-rofi_command="rofi -dmenu -i -p -theme "$HOME"/.config/rofi/deathemonic/config/bluetooth.rasi"
+rofi_command="rofi -dmenu -i -no-fixed-num-lines -yoffset -100 -p bluetooth -theme "$HOME"/.config/rofi/deathemonic/config/bluetooth.rasi"
 
 case "$1" in
 --status)
