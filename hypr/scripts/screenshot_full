@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 FILE=$(xdg-user-dir PICTURES)/screenshots/$(date +'%Y%m%d_%H%M%S.png')
 
-grim $FILE | wl-copy
+grim $FILE
+wl-copy <$FILE
 notify-send --icon ~/.config/hypr/assets/square.png 'Screenshot Saved'
-viewnior $FILE
+# viewnior $FILE
