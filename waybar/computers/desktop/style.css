@@ -47,7 +47,7 @@ tooltip {
 #keyboard-state,
 #pulseaudio,
 #custom-memory,
-#idle-inhibitor,
+#idle_inhibitor,
 #backlight {
   background: @base;
 }
@@ -59,7 +59,7 @@ tooltip {
 #custom-blankleft,
 #window,
 #clock,
-#idle-inhibitor,
+#idle_inhibitor,
 #battery,
 #pulseaudio,
 #network,
@@ -166,7 +166,7 @@ tooltip {
 #tray,
 #custom-bluetooth,
 #custom-cafeine,
-#idle-inhibitor,
+#idle_inhibitor,
 #custom-wprofi,
 #custom-cputemp {
   color: @red;
