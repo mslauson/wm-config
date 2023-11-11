@@ -241,7 +241,7 @@
     "format": "<span font='13' rise='1000'> </span>",
     "interval": "once",
     "tooltip": false,
-    "on-click": "~/.config/rofi/scripts/screenshot"
+    "on-click": "~/.config/rofi/scripts/screenshot_rofi"
   },
   "cava": {
     "cava_config": "/home/mslauson/.config/cava/config",
