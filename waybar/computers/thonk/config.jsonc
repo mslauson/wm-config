@@ -240,10 +240,7 @@
   },
   "idle_inhibitor": {
     "format": "{icon}",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    }
+    "format-icons": { "deactivated": "󰒲 ", "activated": " " }
   },
   "cava": {
     "cava_config": "/home/mslauson/.config/cava/config",
