@@ -32,6 +32,8 @@
     "custom/separator",
     "tray",
     "custom/separator",
+    "idle_inhibitor",
+    "custom/separator",
     "custom/bluetooth",
     "custom/separator",
     "network",
@@ -235,6 +237,13 @@
     "interval": "once",
     "tooltip": false,
     "on-click": "~/.config/rofi/scripts/screenshot_rofi"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
   },
   "cava": {
     "cava_config": "/home/mslauson/.config/cava/config",
