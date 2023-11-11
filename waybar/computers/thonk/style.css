@@ -33,6 +33,7 @@ tooltip {
 #custom-blank,
 #custom-wprofi,
 #custom-power,
+#custom-screenshot,
 #window,
 #clock,
 #battery,
@@ -134,6 +135,7 @@ tooltip {
 #cava,
 #custom-blank,
 #battery,
+#custom-screenshot,
 #custom-updates,
 #cpu {
   border-radius: 10px 0px 0px 10px;
@@ -150,6 +152,7 @@ tooltip {
 /* center */
 #network,
 #tray,
+#custom-wprofi,
 #custom-bluetooth,
 #custom-cafeine,
 #custom-cputemp {
@@ -167,6 +170,7 @@ tooltip {
 /* right */
 #backlight,
 #keyboard-state,
+#custom-power,
 #pulseaudio,
 #custom-memory {
   color: @mauve;
@@ -295,5 +299,9 @@ tooltip {
 }
 
 #custom-bluetooth {
-  color: @peach;
+  color: @sky;
+}
+
+#custom-screenshot {
+  color: @flamingo;
 }
