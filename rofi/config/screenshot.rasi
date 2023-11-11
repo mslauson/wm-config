@@ -1,6 +1,6 @@
 configuration {
     show-icons:                     false;
-    display-drun: 		            "";
+    display-drun: 		            "";
     drun-display-format:            "{icon} {name}";
     disable-history:                false;
     click-to-exit: 		            true;
@@ -39,12 +39,12 @@ prompt {
 
 textbox-prompt-colon {
     expand: 			            false;
-    str: 			                "";
+    str: 			                "";
     border-radius:                  100%;
     background-color:               @BG;
     text-color:                     @FG;
     padding:                        8px 12px 8px 12px;
-    font:			                "Iosevka Nerd Font 10";
+    font:			                "JetBrains Mono Nerd Font";
 }
 
 entry {
