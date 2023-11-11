@@ -20,7 +20,7 @@ tooltip {
   border-radius: 10px;
   border-width: 2px;
   border-style: solid;
-  border-color: @teal;
+  border-color: @peach;
 }
 
 #custom-language,
@@ -29,7 +29,7 @@ tooltip {
 #custom-cputemp,
 #custom-launcher,
 #custom-separator,
-#custom-bluetooth,
+#bluetooth,
 #custom-blank,
 #custom-wprofi,
 #custom-power,
@@ -55,10 +55,11 @@ tooltip {
 #custom-language,
 #custom-updates,
 #custom-caffeine,
-#custom-bluetooth,
+#bluetooth,
 #window,
 #clock,
 #battery,
+#temperature,
 #pulseaudio,
 #network,
 #workspaces,
@@ -154,8 +155,9 @@ tooltip {
 /* center */
 #network,
 #tray,
+#temperature,
 #custom-wprofi,
-#custom-bluetooth,
+#bluetooth,
 #idle_inhibitor,
 #custom-cafeine,
 #custom-cputemp {
@@ -301,10 +303,18 @@ tooltip {
   color: @peach;
 }
 
-#custom-bluetooth {
+#bluetooth {
   color: @sky;
 }
 
 #custom-screenshot {
   color: @flamingo;
+}
+
+#temperature {
+  color: @blue;
+}
+
+#temperature.critical {
+  color: @red;
 }

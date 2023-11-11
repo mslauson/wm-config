@@ -20,7 +20,6 @@
     "cpu",
     "custom/separator",
     "temperature",
-    "custom/cputemp",
     "custom/separator",
     "custom/memory"
   ],
@@ -34,7 +33,7 @@
     "custom/separator",
     "idle_inhibitor",
     "custom/separator",
-    "custom/bluetooth",
+    "bluetooth",
     "custom/separator",
     "network",
     "custom/separator",
@@ -230,6 +229,15 @@
     "format": "<span font='13' rise='1000'>󰂯</span>",
     "interval": "once",
     "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/bluetooth"
+  },
+  "bluetooth": {
+    "format": " {status}",
+    // "format-disabled": " ", // an empty format will hide the module
+    "format-connected": " {num_connections} connected",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "on-click": "~/.config/rofi/scripts/bluetooth"
   },
   "custom/screenshot": {
