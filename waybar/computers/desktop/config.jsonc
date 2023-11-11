@@ -39,6 +39,8 @@
     "keyboard-state",
     "battery",
     "backlight",
+    "custom/screenshot",
+    "custom/separator",
     "custom/wprofi",
     "custom/separator",
     "custom/power"
@@ -211,7 +213,7 @@
     "format": "<span font='13' rise='1000'>󰐥</span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "~/.config/rofi/deathemonic/bin/powermenu"
+    "on-click": "~/.config/rofi/scripts/powermenu"
   },
   "custom/wprofi": {
     "format": "<span color='#7F7FFF' font='13' rise='1000'> </span>",
@@ -230,10 +232,16 @@
     "tooltip": false
   },
   "custom/bluetooth": {
-    "format": "<span font='12' rise='1000'>󰂯</span>",
+    "format": "<span font='13' rise='1000'>󰂯</span>",
     "interval": "once",
     "tooltip": false,
-    "on-click": "~/.config/rofi/deathemonic/bin/bluetooth"
+    "on-click": "~/.config/rofi/scripts/bluetooth"
+  },
+  "custom/screenshot": {
+    "format": "<span font='13' rise='1000'> </span>",
+    "interval": "once",
+    "tooltip": false,
+    "on-click": "~/.config/rofi/scripts/screenshot"
   },
   "cava": {
     "cava_config": "/home/mslauson/.config/cava/config",
