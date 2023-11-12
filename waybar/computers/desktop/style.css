@@ -27,7 +27,7 @@ tooltip {
 #custom-updates,
 #custom-caffeine,
 #custom-cputemp,
-#custom-bluetooth,
+#bluetooth,
 #custom-launcher,
 #custom-separator,
 #custom-blankleft,
@@ -55,7 +55,7 @@ tooltip {
 #custom-language,
 #custom-updates,
 #custom-caffeine,
-#custom-bluetooth,
+#bluetooth,
 #custom-blankleft,
 #window,
 #clock,
@@ -164,7 +164,7 @@ tooltip {
 /* center */
 #network,
 #tray,
-#custom-bluetooth,
+#bluetooth,
 #custom-cafeine,
 #idle_inhibitor,
 #custom-wprofi,
@@ -295,6 +295,6 @@ tooltip {
   color: @peach;
 }
 
-#custom-bluetooth {
-  color: @peach;
+#bluetooth {
+  color: @blue;
 }
