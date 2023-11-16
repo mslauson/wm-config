@@ -11,11 +11,11 @@ case $CHOICE in
 	;;
 "UW")
 	echo "Initializing for UW only" | lolcat
-	hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1" && hyprctl keyword monitor DP-1,disable
+	hyprctl keyword monitor "DP-2,3440x1440@144,0x0,1" && hyprctl keyword monitor DP-1,disable
 	;;
 "Both")
 	echo "Initializing for Both" | lolcat
-	hyprctl keyword monitor "DP-1,2560x1440@75,3440x0,1" && hyprctl keyword monitor "DP-2,3440x1440@144,0x0,1"
+	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1"
 	;;
 "Cancel")
 	echo "Canceling" | lolcat
