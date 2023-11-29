@@ -8,8 +8,6 @@ scripts=$config/scripts
 # notification daemon
 dunst &
 thunderbird &
-discord &
-signal-desktop &
 config-init.sh &
 
 $scripts/swidle &
