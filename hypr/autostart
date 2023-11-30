@@ -16,7 +16,7 @@ $scripts/swidle &
 # $scripts/wall $config/wallpapers/4.jpg &
 
 # effects
-$scripts/rgb &
+# $scripts/rgb &
 
 # other
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
