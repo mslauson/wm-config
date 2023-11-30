@@ -17,10 +17,13 @@ echo "Configuring Hypr" | lolcat
 rm ~/.config/hypr/workspace.conf
 rm ~/.config/hypr/vars.conf
 rm ~/.config/hypr/computer_binds.conf
+rm ~/.config/hypr/hyprpaper.conf
 
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/workspace.conf ~/.config/hypr/workspace.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/vars.conf ~/.config/hypr/vars.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/computer_binds.conf ~/.config/hypr/computer_binds.conf
+ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+
 for dir in bat btop cava dunst hypr wofi ranger scripts swaylock waybar wlogout networkmanager-dmenu rofi systemd; do
 	rm -rf ~/.config/$dir
 	ln -s "$currentPath"/$dir ~/.config/$dir
