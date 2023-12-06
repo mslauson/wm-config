@@ -39,6 +39,7 @@
     "custom/separator",
     "keyboard-state",
     "battery",
+    "backlight/slider",
     "backlight",
     "custom/wprofi",
     "custom/separator",
@@ -207,6 +208,12 @@
     "on-scroll-down": "brightnessctl set 1%-",
     "tooltip": false,
     "min-length": 6
+  },
+  "backlight/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal",
+    "device": "intel_backlight"
   },
   "custom/power": {
     "format": "<span font='13' rise='1000'>󰐥</span>",
