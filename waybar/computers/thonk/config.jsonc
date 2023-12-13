@@ -39,7 +39,7 @@
     "custom/separator",
     "keyboard-state",
     "battery",
-    "backlight/slider",
+    // "backlight/slider",
     "backlight",
     "custom/wprofi",
     "custom/separator",
