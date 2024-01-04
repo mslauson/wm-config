@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 rofi_command="rofi -theme $HOME/.config/rofi/config/monswitch.rasi"
 
-uptime=$(uptime -p | sed -e 's/up //g')
+HYPR_SCRPTS=$HOME/.config/hypr/scripts
 
 # Options
 ddir="$HOME/.config/rofi/config"
@@ -19,21 +19,29 @@ show_msg() {
 	rofi -theme "$ddir/askpass.rasi" -e "Options : yes / no / y / n"
 }
 
+restarts() {
+	$HYPR_SCRPTS/restart_waybar &&
+		$HYPR_SCRPTS/restart_hyprpaper
+}
+
 # Variable passed to rofi
 options="$uw\n$lg\n$both\n$reboot\n$shutdown"
 
-chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-row 0)"
+chosen="$(echo -e "$options" | $rofi_command -p "Monitor Switch" -dmenu -selected-row 0)"
 case $chosen in
 $uw)
 	hyprctl keyword monitor "DP-2,3440x1440@144,0x0,1" && hyprctl keyword monitor DP-1,disable
+	restarts &
 	notify-send -a aurora "Enabling UltraWide Monitor Only" &
 	;;
 $lg)
-	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor DP-2,disable
+	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor DP-2,disable &
+	restarts &
 	notify-send -a aurora "Enabling LG Monitor Only" &
 	;;
 $both)
 	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1"
+	restarts &
 	notify-send -a aurora "Enabling Both Monitors" &
 	;;
 esac
