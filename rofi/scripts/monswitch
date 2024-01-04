@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+rofi_command="rofi -theme $HOME/.config/rofi/config/monswitch.rasi"
+
+uptime=$(uptime -p | sed -e 's/up //g')
+
+# Options
+ddir="$HOME/.config/rofi/config"
+uw="UltraWide 󰏠"
+lg="LG 󰍹"
+both="Both 󰍺"
+# Ask for confirmation
+rdialog() {
+	rofi -dmenu -i -no-fixed-num-lines -p "Are You Sure? : " \
+		-theme "$ddir/confirm.rasi"
+}
+
+# Display Help
+show_msg() {
+	rofi -theme "$ddir/askpass.rasi" -e "Options : yes / no / y / n"
+}
+
+# Variable passed to rofi
+options="$uw\n$lg\n$both\n$reboot\n$shutdown"
+
+chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-row 0)"
+case $chosen in
+$uw)
+	hyprctl keyword monitor "DP-2,3440x1440@144,0x0,1" && hyprctl keyword monitor DP-1,disable
+	;;
+$lg)
+	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor DP-2,disable
+	;;
+$both)
+	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1"
+	;;
+esac
