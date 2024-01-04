@@ -86,7 +86,7 @@ $reboot)
 	fi
 	;;
 $lock)
-	sh $HOME/.local/bin/lock
+	sh $HOME/.config/hypr/scripts/lock
 	;;
 $suspend)
 	ans=$(rdialog &)

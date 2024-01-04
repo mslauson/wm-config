@@ -9,6 +9,7 @@ scripts=$config/scripts
 dunst &
 thunderbird &
 config-init.sh &
+tmux-init.sh &
 
 $scripts/swidle &
 
