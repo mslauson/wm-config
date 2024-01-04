@@ -26,11 +26,14 @@ chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-
 case $chosen in
 $uw)
 	hyprctl keyword monitor "DP-2,3440x1440@144,0x0,1" && hyprctl keyword monitor DP-1,disable
+	notify-send -a aurora "Enabling UltraWide Monitor Only" &
 	;;
 $lg)
 	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor DP-2,disable
+	notify-send -a aurora "Enabling LG Monitor Only" &
 	;;
 $both)
 	hyprctl keyword monitor "DP-1,2560x1440@75,0x0,1" && hyprctl keyword monitor "DP-2,3440x1440@144,2560x0,1"
+	notify-send -a aurora "Enabling Both Monitors" &
 	;;
 esac
