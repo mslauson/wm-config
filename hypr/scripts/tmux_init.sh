@@ -26,12 +26,6 @@ tmux new-session -d -s $OTHER
 # tmux send-keys -t $REST:0 'pRest' C-m
 # tmux select-window -t $REST:0
 #
-tmux new-window -t $WORK:0 -n 'api'
 tmux send-keys -t $WORK:0 'pApi' C-m
 
-tmux select-window -t $WORK:0
-
-tmux new-window -t $CONF:0 -n 'nvim'
 tmux send-keys -t $CONF:0 'pConf' C-m
-
-tmux select-window -t $CONF:0
