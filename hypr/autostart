@@ -10,7 +10,6 @@ dunst &
 thunderbird &
 config-init.sh &
 $scripts/tmux_init.sh &
-tmuxinit.sh &
 
 $scripts/swidle &
 
