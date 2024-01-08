@@ -10,8 +10,8 @@ OTHER="other"
 tmux start-server
 
 tmux new-session -d -s $WORK
-# tmux new-session -d -s $REST
-# tmux new-session -d -s $SSH
+tmux new-session -d -s $REST
+tmux new-session -d -s $SSH
 # tmux new-session -d -s $NOTES
 tmux new-session -d -s $CONF
 tmux new-session -d -s $OTHER
