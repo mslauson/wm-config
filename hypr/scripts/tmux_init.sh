@@ -29,3 +29,4 @@ tmux new-session -d -s $OTHER
 tmux send-keys -t $WORK:0 'pApi' C-m
 
 tmux send-keys -t $CONF:0 'pConf' C-m
+tmux send-keys -t $SSH:0 'eval $(ssh-agent -s) && ssh-agent0-start' C-m
