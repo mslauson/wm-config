@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 currentPath=/home/mslauson/projects/config/wm-config
 
