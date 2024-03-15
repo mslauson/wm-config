@@ -36,7 +36,6 @@ tooltip {
 #custom-screenshot,
 #window,
 #clock,
-#battery,
 #pulseaudio,
 #network,
 #workspaces,
@@ -315,6 +314,15 @@ tooltip {
   color: @blue;
 }
 
+#battery.good {
+  color: @blue;
+}
+
+#battery.warning {
+  color: @peach;
+}
+
+#battery.critical,
 #temperature.critical {
   color: @red;
 }
