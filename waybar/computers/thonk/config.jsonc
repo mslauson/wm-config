@@ -21,7 +21,7 @@
     "custom/separator",
     "temperature",
     "custom/separator",
-    "custom/memory"
+    "custom/memory",
   ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
@@ -43,22 +43,43 @@
     "backlight",
     "custom/wprofi",
     "custom/separator",
-    "custom/power"
+    "custom/power",
   ],
   "hyprland/window": {
     // Module has to be here in the config otherwise it will not work correctly
     "format": "{}",
     "separate-outputs": true,
-    "max-length": 55
+    "max-length": 55,
   },
   "clock": {
-    "format": "{: %R   %a, %b %d}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "format": "{:%H:%M}  ",
+    "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+      },
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down",
+    },
   },
   "custom/launcher": {
     "format": "<span color='#7F3FBF'></span>",
     // "on-click": "wofi --show drun --insensitive --allow-images"
-    "on-click": "rofi -show drun -theme ~/.config/rofi/global/rofi.rasi"
+    "on-click": "rofi -show drun -theme ~/.config/rofi/global/rofi.rasi",
   },
   "hyprland/workspaces": {
     "on-scroll-up": "hyprctl dispatch workspace e+1",
@@ -78,28 +99,28 @@
       "9": "",
       "10": "",
       "urgent": "",
-      "default": ""
-    }
+      "default": "",
+    },
   },
   "cpu": {
     "interval": 10,
     "format": "  {usage}%",
     "max-length": 10,
     "format-alt-click": "click-right",
-    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'",
   },
   "keyboard-state": {
     "capslock": true,
     "format": "󰌌  {icon} ",
     "format-icons": {
       "locked": "",
-      "unlocked": ""
-    }
+      "unlocked": "",
+    },
   },
   "custom/cputemp": {
     "exec": "~/.config/waybar/scripts/cpu-temp.sh",
     "interval": 1,
-    "on-click": "~/.config/waybar/scripts/btop.sh"
+    "on-click": "~/.config/waybar/scripts/btop.sh",
   },
   "temperature": {
     "thermal-zone": 1,
@@ -108,22 +129,22 @@
     "format-alt": " {temperatureC}°C",
     "critical-threshold": 70,
     "format-critical": " {temperatureC}°C",
-    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'",
   },
   "custom/memory": {
     "exec": "~/.config/waybar/scripts/free-mem.sh",
-    "interval": 1
+    "interval": 1,
     // "on-click": "~/.config/waybar/scripts/btop.sh"
   },
   "tray": {
     "icon-size": 13,
     "spacing": 10,
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/test": {
     "on-click": "~/.config/waybar/scripts/screenshot-region.sh", // still testing this custom screenshot module
     "on-click-right": "exec,hyprshot --mode window -o $HOME/Pictures/Screenshots/$(date +'%s.png')",
-    "format": "{}"
+    "format": "{}",
   },
   "custom/caffeine": {
     "exec": "~/.config/waybar/scripts/caffeine.sh",
@@ -131,13 +152,13 @@
     "interval": 3,
     "on-click": "exec,caffiene",
     "format-icons": ["󰒲", ""],
-    "format": "{icon}"
+    "format": "{icon}",
   },
   "custom/updates": {
     "exec": "(checkupdates ; yay -Qua) | wc -l",
     "interval": 900,
     "format": "󰏓 {}",
-    "on-click": "~/.config/waybar/scripts/updates.sh"
+    "on-click": "~/.config/waybar/scripts/updates.sh",
   },
   "network": {
     "format-wifi": "󰤨 {essid}",
@@ -146,20 +167,20 @@
     "format-disconnected": "󰈂 Disconnected",
     "tooltip-format-ethernet": "{bandwidthDownBits}  {bandwidthUpBits}  ",
     "tooltip-format-wifi": "󰤨 {signalStrength}% |  {bandwidthDownBits}  {bandwidthUpBits}  ",
-    "on-click": "~/.config/waybar/scripts/networkmanager.sh"
+    "on-click": "~/.config/waybar/scripts/networkmanager.sh",
   },
   "custom/language": {
     "exec": "cat /tmp/kb_layout",
     "interval": 3,
     "format": " {}",
-    "on-click": "~/.config/waybar/scripts/keyhint.sh"
+    "on-click": "~/.config/waybar/scripts/keyhint.sh",
   },
   "custom/pipewire": {
     "tooltip": false,
     "max-length": 6,
     "exec": "$HOME/.config/waybar/scripts/pipewire.sh", // script cause higher cpuload and higher cpu-temp
     "on-click": "pavucontrol",
-    "on-click-right": "kitty --class update -T update -e pulsemixer"
+    "on-click-right": "kitty --class update -T update -e pulsemixer",
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -174,8 +195,8 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": ["", "", "󰕾", ""]
-    }
+      "default": ["", "", "󰕾", ""],
+    },
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
@@ -185,20 +206,20 @@
     "on-click": "pamixer --default-source -t",
     "on-scroll-up": "pamixer --default-source -i 5",
     "on-scroll-down": "pamixer --default-source -d 5",
-    "scroll-step": 5
+    "scroll-step": 5,
   },
   "battery": {
     "states": {
       "good": 95,
       "warning": 30,
-      "critical": 20
+      "critical": 20,
     },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": ["", "", "", "", ""],
-    "tooltip": false
+    "tooltip": false,
   },
   "backlight": {
     "device": "intel_backlight",
@@ -207,36 +228,36 @@
     "on-scroll-up": "brightnessctl set 1%+",
     "on-scroll-down": "brightnessctl set 1%-",
     "tooltip": false,
-    "min-length": 6
+    "min-length": 6,
   },
   "backlight/slider": {
     "min": 0,
     "max": 100,
     "orientation": "horizontal",
-    "device": "intel_backlight"
+    "device": "intel_backlight",
   },
   "custom/power": {
     "format": "<span font='13' rise='1000'>󰐥</span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "~/.config/rofi/scripts/powermenu"
+    "on-click": "~/.config/rofi/scripts/powermenu",
   },
   "custom/wprofi": {
     "format": "<span color='#7F7FFF' font='13' rise='1000'> </span>",
     "tooltip": false,
     "interval": "once",
-    "on-click": "~/.config/hypr/scripts/wallpaper_rofi.sh"
+    "on-click": "~/.config/hypr/scripts/wallpaper_rofi.sh",
   },
   "custom/separator": {
     "format": "|",
     "interval": "once",
-    "tooltip": false
+    "tooltip": false,
   },
   "custom/bluetooth": {
     "format": "<span font='13' rise='1000'>󰂯</span>",
     "interval": "once",
     "tooltip": false,
-    "on-click": "~/.config/rofi/scripts/bluetooth"
+    "on-click": "~/.config/rofi/scripts/bluetooth",
   },
   "bluetooth": {
     "format": " {status}",
@@ -245,17 +266,17 @@
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "on-click": "~/.config/rofi/scripts/bluetooth"
+    "on-click": "~/.config/rofi/scripts/bluetooth",
   },
   "custom/screenshot": {
     "format": "<span font='13' rise='1000'> </span>",
     "interval": "once",
     "tooltip": false,
-    "on-click": "~/.config/rofi/scripts/screenshot_rofi"
+    "on-click": "~/.config/rofi/scripts/screenshot_rofi",
   },
   "idle_inhibitor": {
     "format": "{icon}",
-    "format-icons": { "deactivated": "󰒲 ", "activated": " " }
+    "format-icons": { "deactivated": "󰒲 ", "activated": " " },
   },
   "cava": {
     "cava_config": "/home/mslauson/.config/cava/config",
@@ -276,7 +297,7 @@
     // "input_delay": 2,
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "actions": {
-      "on-click-right": "mode"
-    }
-  }
+      "on-click-right": "mode",
+    },
+  },
 }
