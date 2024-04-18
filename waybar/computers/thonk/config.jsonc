@@ -28,6 +28,7 @@
     "cava",
     "pulseaudio",
     "custom/updates",
+    "systemd-failed-units",
     "custom/separator",
     "tray",
     "custom/separator",
@@ -75,6 +76,13 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down",
     },
+  },
+  "systemd-failed-units": {
+    "hide-on-ok": false, // Do not hide if there is zero failed units.
+    "format": "✗ {nr_failed}",
+    "format-ok": "✓",
+    "system": true, // Monitor failed systemwide units.
+    "user": false, // Ignore failed user units.
   },
   "custom/launcher": {
     "format": "<span color='#7F3FBF'></span>",

@@ -29,6 +29,7 @@
     "cava",
     "pulseaudio",
     "custom/updates",
+    "systemd-failed-units",
     "custom/separator",
     "tray",
     "custom/separator",
@@ -53,10 +54,6 @@
     "separate-outputs": true,
     "max-length": 55
   },
-  // "clock": {
-  //   "format": "{: %R   %a, %b %d}",
-  //   "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-  // },
     "clock": {
         "format": "{:%H:%M}  ",
         "format-alt": "{:%A, %B %d, %Y (%R)}  ",
@@ -82,6 +79,13 @@
                     "on-scroll-down": "shift_down"
                     }
     },
+  "systemd-failed-units": {
+    "hide-on-ok": true,
+    "format": "✗ {nr_failed}",
+    "format-ok": "✓",
+    "system": true,
+    "user": false
+  },
   "custom/launcher": {
     "format": "<span color='#7F3FBF'></span>",
     // "on-click": "wofi --show drun --insensitive --allow-images"
