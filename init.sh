@@ -43,6 +43,10 @@ for item in .xprofile .starship.toml; do
 	ln -s "$currentPath"/$item ~/$item
 done
 
+echo "Configuring greetd" | lolcat
+sudo rm -rf /etc/greetd/config.toml
+sudo ln -s $currentPath/greetd/config.toml /etc/greetd/config.toml
+
 echo "Configuring Hypr Stores And Scripts" | lolcat
 rm -rf /home/mslauson/projects/config/wm-config/hypr/store
 mkdir /home/mslauson/projects/config/wm-config/hypr/store
