@@ -23,6 +23,7 @@ ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/worksp
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/vars.conf ~/.config/hypr/vars.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/computer_binds.conf ~/.config/hypr/computer_binds.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/hypridle.conf ~/.config/hypr/hypridle.conf
 
 for dir in bat btop cava dunst hypr wofi ranger scripts swaylock waybar wlogout networkmanager-dmenu rofi systemd; do
 	rm -rf ~/.config/$dir

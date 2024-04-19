@@ -11,7 +11,7 @@ thunderbird &
 config-init.sh &
 $scripts/tmux_init.sh &
 
-$scripts/swidle &
+# $scripts/swidle &
 
 # wallpaper
 # $scripts/wall $config/wallpapers/4.jpg &
