@@ -18,6 +18,7 @@ rm ~/.config/hypr/workspace.conf
 rm ~/.config/hypr/vars.conf
 rm ~/.config/hypr/computer_binds.conf
 rm ~/.config/hypr/hyprpaper.conf
+rm ~/.config/hypr/hypridle.conf
 
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/workspace.conf ~/.config/hypr/workspace.conf
 ln -s /home/mslauson/projects/config/wm-config/hypr/computers/"$COMPUTER"/vars.conf ~/.config/hypr/vars.conf
