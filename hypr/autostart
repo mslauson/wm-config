@@ -20,3 +20,5 @@ $scripts/tmux_init.sh &
 # $scripts/rgb &
 
 # other
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+server_linux_debug >>~/.var/log/disc-rpc-ext.txt
