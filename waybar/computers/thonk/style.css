@@ -8,7 +8,7 @@
   font-size: 13px;
   padding: 0;
   min-height: 0;
-  margin: -2;
+  margin: -2px;
 }
 window#waybar {
   background-color: rgba(46, 52, 64, 0);
@@ -39,6 +39,7 @@ tooltip {
 #clock,
 #pulseaudio,
 #network,
+#systemd-failed-units,
 #workspaces,
 #tray,
 #cpu,
@@ -87,7 +88,7 @@ tooltip {
 #custom-launcher {
   color: #d8dee9;
   border-radius: 10px 0px 0px 10px;
-  padding: 5 5 5 10px;
+  padding: 5px 5px 5px 10px;
   margin-top: 14px;
   margin-bottom: 15px;
   border-left: 5px;
@@ -159,6 +160,7 @@ tooltip {
 #custom-wprofi,
 #bluetooth,
 #idle_inhibitor,
+#systemd-failed-units,
 #custom-cafeine,
 #custom-cputemp {
   color: @red;
@@ -205,7 +207,7 @@ tooltip {
 #taskbar button {
   border-radius: 8px 8px 8px 8px;
   padding: 0 0 0 8px;
-  margin: 0px 2;
+  margin: 0px 2px;
   margin-left: 0px;
   color: #000000;
   background: #39404f;
