@@ -42,6 +42,7 @@ tooltip {
 #workspaces,
 #tray,
 #cpu,
+#systemd-failed-units,
 #idle_inhibitor,
 #cava,
 #temperature,
@@ -160,6 +161,7 @@ tooltip {
 #bluetooth,
 #idle_inhibitor,
 #custom-cafeine,
+#systemd-failed-units,
 #custom-cputemp {
   color: @red;
   margin-top: 14px;
@@ -303,6 +305,7 @@ tooltip {
   color: @peach;
 }
 
+#systemd-failed-units.ok,
 #bluetooth {
   color: @sky;
 }
@@ -324,6 +327,7 @@ tooltip {
 }
 
 #battery.critical,
+#systemd-failed-units.ok,
 #temperature.critical {
   color: @red;
 }

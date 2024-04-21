@@ -42,6 +42,7 @@ tooltip {
 #workspaces,
 #tray,
 #cpu,
+#systemd-failed-units,
 #cava,
 #temperature,
 #keyboard-state,
@@ -168,6 +169,7 @@ tooltip {
 #custom-cafeine,
 #idle_inhibitor,
 #custom-wprofi,
+#systemd-failed-units,
 #custom-cputemp {
   color: @red;
   margin-top: 14px;
@@ -262,6 +264,7 @@ tooltip {
   color: @green;
 }
 
+#systemd-failed-units.degraded,
 #custom-power {
   color: @red;
 }
@@ -295,6 +298,7 @@ tooltip {
   color: @peach;
 }
 
+#systemd-failed-units.ok,
 #bluetooth {
   color: @blue;
 }
