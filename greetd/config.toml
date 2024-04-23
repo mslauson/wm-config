@@ -1,5 +1,5 @@
 [terminal]
-vt = 2
+vt = 3
 
 [default_session]
 command = "tuigreet --cmd Hyprland"
